@@ -406,7 +406,6 @@ class LightGCN(BasicModel):
         values = values[random_index]/keep_prob
         g = torch.sparse.FloatTensor(index.t(), values, size)
         return g
-
     def __dropout(self, keep_prob):
         if self.A_split:
             graph = []

@@ -74,7 +74,7 @@ lam_d = args.lam_d
 ema = None
 
 wandb.login()
-wandb.init(project='gravity_rs',
+wandb.init(project='GFML_Revision',
            name=f'{dataset}_{model_name}_{loss_mode}_{args.dist_mode}_{mix_ratio}',
            config=args)
 wandb.config.update(args)
