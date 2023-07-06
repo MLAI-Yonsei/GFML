@@ -1,0 +1,463 @@
+diff --git a/code/Procedure.py b/code/Procedure.py
+index 7752ee9..4879252 100755
+--- a/code/Procedure.py
++++ b/code/Procedure.py
+@@ -11,6 +11,7 @@ import numpy as np
+ import torch
+ import utils
+ import multiprocessing
++import wandb
+ 
+ CORES = 1
+ 
+@@ -38,6 +39,12 @@ def Metric_train_original(args, dataset, model, loss_class, epoch, sampler, w=No
+     aver_metric_loss = aver_metric_loss / total_batch
+     aver_reg_loss = aver_reg_loss / total_batch
+ 
++    wandb.log({
++        'epoch' : epoch,
++        'Train_Metric_loss' : aver_metric_loss,
++        'Train_Reg_loss' : aver_reg_loss
++    })
++
+     return f"aver metric loss{aver_metric_loss:.3e}, aver reg loss{aver_reg_loss:.3e}"
+     
+ def ndcg_func(ground_truths, ranks):
+@@ -168,4 +175,15 @@ def Test(args, dataset, Recmodel, epoch, device, w=None, multicore=0):
+         if multicore == 1:
+             pool.close()
+         print(results)
++
++        wandb.log(
++            {
++                'Recall@5' : results['recall'][0],
++                'Recall@10' : results['recall'][1],
++                'Recall@20' : results['recall'][2],
++                'NDCG@5' : results['ndcg'][0],
++                'NDCG@10': results['ndcg'][1],
++                'NDCG@20': results['ndcg'][2],
++            }
++        )
+         return results
+diff --git a/code/__pycache__/Procedure.cpython-37.pyc b/code/__pycache__/Procedure.cpython-37.pyc
+index a580e44..8acb189 100644
+Binary files a/code/__pycache__/Procedure.cpython-37.pyc and b/code/__pycache__/Procedure.cpython-37.pyc differ
+diff --git a/code/__pycache__/dataloader.cpython-37.pyc b/code/__pycache__/dataloader.cpython-37.pyc
+index 7e64e66..8e91506 100644
+Binary files a/code/__pycache__/dataloader.cpython-37.pyc and b/code/__pycache__/dataloader.cpython-37.pyc differ
+diff --git a/code/__pycache__/model.cpython-37.pyc b/code/__pycache__/model.cpython-37.pyc
+index c30c896..c3a9ac4 100644
+Binary files a/code/__pycache__/model.cpython-37.pyc and b/code/__pycache__/model.cpython-37.pyc differ
+diff --git a/code/__pycache__/parse.cpython-37.pyc b/code/__pycache__/parse.cpython-37.pyc
+index f31b20f..723e90d 100644
+Binary files a/code/__pycache__/parse.cpython-37.pyc and b/code/__pycache__/parse.cpython-37.pyc differ
+diff --git a/code/__pycache__/utils.cpython-37.pyc b/code/__pycache__/utils.cpython-37.pyc
+index 543f3c2..ceed500 100644
+Binary files a/code/__pycache__/utils.cpython-37.pyc and b/code/__pycache__/utils.cpython-37.pyc differ
+diff --git a/code/bashes/gfml_books.sh b/code/bashes/gfml_books.sh
+new file mode 100644
+index 0000000..df100e9
+--- /dev/null
++++ b/code/bashes/gfml_books.sh
+@@ -0,0 +1,11 @@
++#!/bin/bash
++DATA="amazon-book"
++GPU=3
++
++for LR in 1e-2 1e-3 1e-4 1e-5 1e-6
++do
++for LAM in 1e-2 1e-1 10e-1 30e-1 50e-1
++do
++python main.py --gfml --dataset $DATA --gpu_id $GPU --lr $LR --lambd $LAM
++done
++done
+\ No newline at end of file
+diff --git a/code/bashes/gfml_grocery.sh b/code/bashes/gfml_grocery.sh
+new file mode 100644
+index 0000000..1ca81a5
+--- /dev/null
++++ b/code/bashes/gfml_grocery.sh
+@@ -0,0 +1,11 @@
++#!/bin/bash
++DATA="amazon-grocery"
++GPU=2
++
++for LR in 1e-2 1e-3 1e-4 1e-5 1e-6
++do
++for LAM in 1e-2 1e-1 10e-1 30e-1 50e-1
++do
++python main.py --gfml --dataset $DATA --gpu_id $GPU --lr $LR --lambd $LAM
++done
++done
+\ No newline at end of file
+diff --git a/code/bashes/gfml_music.sh b/code/bashes/gfml_music.sh
+new file mode 100644
+index 0000000..a01f6a9
+--- /dev/null
++++ b/code/bashes/gfml_music.sh
+@@ -0,0 +1,11 @@
++#!/bin/bash
++DATA="amazon-digital-music"
++GPU=1
++
++for LR in 1e-2 1e-3 1e-4 1e-5 1e-6
++do
++for LAM in 1e-2 1e-1 10e-1 30e-1 50e-1
++do
++python main.py --gfml --dataset $DATA --gpu_id $GPU --lr $LR --lambd $LAM
++done
++done
+\ No newline at end of file
+diff --git a/code/bashes/gfml_yelp.sh b/code/bashes/gfml_yelp.sh
+new file mode 100644
+index 0000000..abcbdd5
+--- /dev/null
++++ b/code/bashes/gfml_yelp.sh
+@@ -0,0 +1,11 @@
++#!/bin/bash
++DATA="yelp"
++GPU=4
++
++for LR in 1e-2 1e-3 1e-4 1e-5 1e-6
++do
++for LAM in 1e-2 1e-1 10e-1 30e-1 50e-1
++do
++python main.py --gfml --dataset $DATA --gpu_id $GPU --lr $LR --lambd $LAM
++done
++done
+\ No newline at end of file
+diff --git a/code/main.py b/code/main.py
+index 5893906..2d8290b 100755
+--- a/code/main.py
++++ b/code/main.py
+@@ -5,17 +5,21 @@ from os.path import join
+ from parse import parse_args
+ import Procedure
+ # from tensorboardX import SummaryWriter
+-from torch.utils.tensorboard import SummaryWriter
++# from torch.utils.tensorboard import SummaryWriter
+ import time
+ import torch
+ import utils
++import wandb
+ 
+ if __name__ == '__main__':
+-
+     # set seed
+     args = parse_args()
+     utils.set_seed(args.seed)
+-    device = torch.device('cuda' if torch.cuda.is_available() else "cpu")
++    if torch.cuda.is_available():
++        print("CUDA is avaiable")
++    else:
++        print("CUDA is not available")
++    device = torch.device(f'cuda:{args.gpu_id}' if torch.cuda.is_available() else "cpu")
+ 
+     # create model and load dataset
+     dataset = Loader(args, device, path="../data/" + args.dataset)
+@@ -26,6 +30,21 @@ if __name__ == '__main__':
+     # save/load file
+     weight_file = utils.getFileName(args)
+     print(f"load and save to {weight_file}")
++
++    wandb.login()
++    if args.gfml:
++        wandb.init(project='GFML_Revision_MCL',
++                   name=f'{weight_file}',
++                   config=args)
++    else:
++        wandb.init(project='GFML_Revision_MCL',
++                   name=f'{weight_file}',
++                   config=args)
++
++    # wandb.config.update(args)
++
++    wandb.watch(model)
++
+     if args.load:
+         try:
+             model.load_state_dict(torch.load(weight_file, map_location=torch.device('cpu')))
+@@ -35,9 +54,10 @@ if __name__ == '__main__':
+ 
+     # init tensorboard
+     if args.tensorboard:
+-        w : SummaryWriter = SummaryWriter(
+-                                join("./runs", time.strftime("%m-%d-%Hh%Mm%Ss-"))
+-                            )
++        # w : SummaryWriter = SummaryWriter(
++        #                         join("./runs", time.strftime("%m-%d-%Hh%Mm%Ss-"))
++        #                     )
++        w = None
+     else:
+         w = None
+ 
+@@ -48,6 +68,7 @@ if __name__ == '__main__':
+     try:
+         topks = eval(args.topks)
+         best_result = np.zeros(2*len(topks))
++        BEST_NDCG10 = 1e-10
+         for epoch in range(1, args.epochs+1):
+             print(f'Epoch {epoch}/{args.epochs}')
+             start = time.time()
+@@ -56,6 +77,30 @@ if __name__ == '__main__':
+                 if np.sum(np.append(result['recall'], result['ndcg'])) > np.sum(best_result):
+                     best_result = np.append(result['recall'], result['ndcg'])
+                     torch.save(model.state_dict(), weight_file)
++                    wandb.log(
++                        {
++                            'Recall@5_total_best' : result['recall'][0],
++                            'Recall@10_total_best': result['recall'][1],
++                            'Recall@20_total_best': result['recall'][2],
++                            'ndcg@5_total_best': result['ndcg'][0],
++                            'ndcg@10_total_best': result['ndcg'][1],
++                            'ndcg@20_total_best': result['ndcg'][2],
++                        }
++                    )
++                if result['ndcg'][1] > BEST_NDCG10:
++                    BEST_NDCG10 = result['ndcg'][1]
++                    wandb.log(
++                        {
++                            'EPOCH_ndcg_best' : epoch,
++                            'Recall@5_ndcg_best': result['recall'][0],
++                            'Recall@10_ndcg_best': result['recall'][1],
++                            'Recall@20_ndcg_best': result['recall'][2],
++                            'ndcg@5_ndcg_best': result['ndcg'][0],
++                            'ndcg@10_ndcg_best': result['ndcg'][1],
++                            'ndcg@20_ndcg_best': result['ndcg'][2],
++                            'BEST_NDCG@10': BEST_NDCG10
++                        }
++                    )
+                 print("Best so far:", best_result)
+ 
+             output_information = Procedure.Metric_train_original(args, dataset, model, metric, epoch, sampler, w)
+@@ -67,8 +112,34 @@ if __name__ == '__main__':
+         if np.sum(np.append(result['recall'], result['ndcg'])) > np.sum(best_result):
+             best_result = np.append(result['recall'], result['ndcg'])
+             torch.save(model.state_dict(), weight_file)
++            wandb.log(
++                {
++                    'Recall@5_total_best': result['recall'][0],
++                    'Recall@10_total_best': result['recall'][1],
++                    'Recall@20_total_best': result['recall'][2],
++                    'ndcg@5_total_best': result['ndcg'][0],
++                    'ndcg@10_total_best': result['ndcg'][1],
++                    'ndcg@20_total_best': result['ndcg'][2],
++                }
++            )
++        if result['ndcg'][1] > BEST_NDCG10:
++            BEST_NDCG10 = result['ndcg'][1]
++            wandb.log(
++                {
++                    'EPOCH_ndcg_best': epoch,
++                    'Recall@5_ndcg_best': result['recall'][0],
++                    'Recall@10_ndcg_best': result['recall'][1],
++                    'Recall@20_ndcg_best': result['recall'][2],
++                    'ndcg@5_ndcg_best': result['ndcg'][0],
++                    'ndcg@10_ndcg_best': result['ndcg'][1],
++                    'ndcg@20_ndcg_best': result['ndcg'][2],
++                    'BEST_NDCG@10': BEST_NDCG10
++                }
++            )
+         print("Best overall:", best_result)
+ 
++        wandb.finish()
++
+     finally:
+         sampler.close()
+         if args.tensorboard:
+diff --git a/code/model.py b/code/model.py
+index 8a705a0..d08a557 100755
+--- a/code/model.py
++++ b/code/model.py
+@@ -33,6 +33,15 @@ class LightGCN(nn.Module):
+         nn.init.xavier_uniform_(self.embedding_user.weight, gain=1)
+         nn.init.xavier_uniform_(self.embedding_item.weight, gain=1)
+ 
++        if self.args.gfml:
++            self.mass_u = nn.Embedding(self.num_users, 1)
++            self.mass_i = nn.Embedding(self.num_items, 1)
++            nn.init.xavier_normal_(self.mass_u.weight)
++            nn.init.xavier_normal_(self.mass_i.weight)
++
++            self.relu = nn.ReLU()
++            self.lambd = self.args.lambd
++
+         self.f = nn.Sigmoid()
+         self.Graph = self.dataset.getSparseGraph()
+ 
+@@ -114,6 +123,20 @@ class LightGCN(nn.Module):
+         neg_emb_ego = self.embedding_item(neg_items)
+         return users_emb, pos_emb, neg_emb, users_emb_ego, pos_emb_ego, neg_emb_ego
+ 
++    def gravity(self, users, pos_items, neg_items, pos_dist, neg_dist):
++        # user & pos_items
++        up_mass = torch.log(self.relu(self.mass_u(users)) + 1) * torch.log(self.relu(self.mass_i(pos_items)) + 1)
++        up_dist = self.lambd * torch.log(pos_dist + 1)
++        up_loss = up_dist - up_mass.squeeze()
++
++        # user & neg_items
++        un_mass = torch.log(self.relu(self.mass_u(users)) + 1) * torch.log(self.relu(self.mass_i(neg_items)) + 1)
++        un_dist = self.lambd * torch.log(neg_dist + 1)
++        un_loss = un_mass.squeeze() - un_dist
++
++        metric_loss = torch.mean(up_loss) + torch.mean(un_loss)
++        return torch.mean(metric_loss)
++
+     def loss(self, S, num_items_per_user):
+         users = torch.Tensor(S[:, 0]).long()
+         pos_items = torch.Tensor(S[:, 1]).long()
+@@ -136,37 +159,55 @@ class LightGCN(nn.Module):
+         distance_to_neg_items = torch.sum((users_emb.unsqueeze(-1) - neg_emb.transpose(-2, -1)) ** 2, 1)
+         min_neg_per_item = distance_to_neg_items.min(1)[0]
+ 
+-        # mining
+-        start_idx = 0
+-        pos_lengths = []
+-        neg_length = []
+-        for i in num_items_per_user:
+-
+-            max_pos_length = pos_distances[start_idx: start_idx+i].max()
+-            pos_lengths.append(max_pos_length)
+-            
+-            min_neg_length = min_neg_per_item[start_idx: start_idx+i].min()
+-            neg_length.append(min_neg_length)
+-            
+-            start_idx += i
+-
+-        num_items_per_user = torch.LongTensor(num_items_per_user)
+-
+-        pos_lengths = torch.repeat_interleave(torch.tensor(pos_lengths), num_items_per_user)
+-        pos_lengths = pos_lengths.to(self.device)
+-        neg_length = torch.repeat_interleave(torch.tensor(neg_length), num_items_per_user)
+-        neg_length = neg_length.to(self.device)
+-
+-        # negative mining using max pos length
+-        neg_idx = (distance_to_neg_items - (self.args.margin + pos_lengths.unsqueeze(-1))) >= 0
+-        distance_to_neg_items = distance_to_neg_items + torch.where(neg_idx, float('inf'), 0.)
+-
+-        # positive mining using min neg length
+-        pos_idx = (pos_distances - (neg_length - self.args.margin)) <= 0
+-        pos_distances = pos_distances + torch.where(pos_idx, -float('inf'), 0.)
+-
+-        # compute loss
+-        neg_loss = 1.0 / self.args.beta * torch.log(1 + torch.sum(torch.exp(-self.args.beta * (distance_to_neg_items + self.args.lamb_n)))/self.args.batch_size)
+-        pos_loss = 1.0 / self.args.alpha * torch.log(1 + torch.sum(torch.exp(self.args.alpha * (pos_distances + self.args.lamb_p)))/self.args.batch_size)
+-        
+-        return (neg_loss+pos_loss), reg_loss
++        if self.args.gfml:
++            min_neg_items = neg_items[
++                torch.arange(neg_items.size(0)).unsqueeze(1), distance_to_neg_items.min(1)[1].unsqueeze(-1)].squeeze()
++
++            minnegEmb = negEmb0[torch.arange(negEmb0.size(0)).unsqueeze(1),
++                        distance_to_neg_items.min(1)[1].unsqueeze(-1), :].squeeze()
++
++            reg_loss = (1 / 2) * (userEmb0.norm(2).pow(2) + posEmb0.norm(2).pow(2)) / float(len(users)) + \
++                       (1 / 2) * minnegEmb.norm(2).pow(2) / float(len(users))
++
++            metric_loss = self.gravity(users=users, pos_items=pos_items, neg_items=min_neg_items,
++                                       pos_dist=pos_distances, neg_dist=min_neg_per_item)
++
++
++
++            return metric_loss, reg_loss
++
++        else:
++            # mining
++            start_idx = 0
++            pos_lengths = []
++            neg_length = []
++            for i in num_items_per_user:
++
++                max_pos_length = pos_distances[start_idx: start_idx+i].max()
++                pos_lengths.append(max_pos_length)
++
++                min_neg_length = min_neg_per_item[start_idx: start_idx+i].min()
++                neg_length.append(min_neg_length)
++
++                start_idx += i
++
++            num_items_per_user = torch.LongTensor(num_items_per_user)
++
++            pos_lengths = torch.repeat_interleave(torch.tensor(pos_lengths), num_items_per_user)
++            pos_lengths = pos_lengths.to(self.device)
++            neg_length = torch.repeat_interleave(torch.tensor(neg_length), num_items_per_user)
++            neg_length = neg_length.to(self.device)
++
++            # negative mining using max pos length
++            neg_idx = (distance_to_neg_items - (self.args.margin + pos_lengths.unsqueeze(-1))) >= 0
++            distance_to_neg_items = distance_to_neg_items + torch.where(neg_idx, float('inf'), 0.)
++
++            # positive mining using min neg length
++            pos_idx = (pos_distances - (neg_length - self.args.margin)) <= 0
++            pos_distances = pos_distances + torch.where(pos_idx, -float('inf'), 0.)
++
++            # compute loss
++            neg_loss = 1.0 / self.args.beta * torch.log(1 + torch.sum(torch.exp(-self.args.beta * (distance_to_neg_items + self.args.lamb_n)))/self.args.batch_size)
++            pos_loss = 1.0 / self.args.alpha * torch.log(1 + torch.sum(torch.exp(self.args.alpha * (pos_distances + self.args.lamb_p)))/self.args.batch_size)
++
++            return (neg_loss+pos_loss), reg_loss
+\ No newline at end of file
+diff --git a/code/parse.py b/code/parse.py
+index cc44dbf..a5615db 100755
+--- a/code/parse.py
++++ b/code/parse.py
+@@ -20,7 +20,7 @@ def parse_args():
+     parser.add_argument('--topks', nargs='?',default="[5, 10, 20]",
+                         help="@k test list")
+ 
+-    parser.add_argument('--tensorboard', type=int,default=1,
++    parser.add_argument('--tensorboard', type=int,default=0,
+                         help="enable tensorboard")
+     parser.add_argument('--load', type=int, default=0)
+     parser.add_argument('--multicore', type=int, default=1, help='whether we use multiprocessing or not in test')
+@@ -57,4 +57,9 @@ def parse_args():
+     parser.add_argument('--lamb_p', type=float, default=6.5, help="negative threshold")
+     parser.add_argument('--lamb_n', type=float, default=-0.5, help="positive threshold")
+ 
++    # GFML
++    parser.add_argument('--gfml', action='store_true')
++    parser.add_argument('--lambd', type=float, default=1.0)
++    parser.add_argument('--gpu_id', type=int, default=1)
++
+     return parser.parse_args()
+\ No newline at end of file
+diff --git a/code/utils.py b/code/utils.py
+index 9c8b0f5..b496fb9 100755
+--- a/code/utils.py
++++ b/code/utils.py
+@@ -17,7 +17,9 @@ class MetricLoss:
+     def __init__(self, model, args):
+         self.model = model
+         self.args = args
+-        self.opt = optim.Adam((model.embedding_user.weight, model.embedding_item.weight), lr=self.args.lr)
++        self.opt = optim.Adam(
++            (model.embedding_user.weight, model.embedding_item.weight, model.mass_u.weight, model.mass_i.weight),
++            lr=self.args.lr)
+ 
+     def stageOne(self, S, num_items_per_user):
+ 
+@@ -99,16 +101,19 @@ def UniformSample_original(allPos, num_users, num_items, batch_size, neg_k, resu
+             result_queue.put((user_triples, num_items_per_user))
+ 
+ def set_seed(seed):
+-    np.random.seed(seed)   
++    torch.manual_seed(seed)
++    random.seed(seed)
++    os.environ["PYTHONHASHSEED"] = str(seed)
+     if torch.cuda.is_available():
+         torch.cuda.manual_seed(seed)
+         torch.cuda.manual_seed_all(seed)
+-    torch.manual_seed(seed)
++        # torch.backends.cudnn.deterministic = True
++        # torch.backends.cudnn.benchmark = False
+ 
+ def getFileName(args):
+-    path = "./checkpoints"
+-    file = f"{args.dataset}-{args.layer}-{args.dim}-{args.alpha}-{args.beta}-{args.lamb_p}-{args.lamb_n}.pth.tar"
+-    return os.path.join(path,file)
++    path = "../checkpoints"
++    file = f"{args.dataset}-gfml-{str(args.gfml)}-{args.lr}-{args.lambd}.pth.tar"
++    return os.path.join(path, file)
+ 
+ def minibatch(*tensors, **kwargs):
+ 

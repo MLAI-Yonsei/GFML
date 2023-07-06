@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/data1/deepdog/project/GFML/gfml-rs/codes/main.py", line 1, in <module>
+    import world
+  File "/data1/deepdog/project/GFML/gfml-rs/codes/world.py", line 104, in <module>
+    raise NotImplementedError(f"Haven't supported {model_name} yet!, try {all_models}")
+NotImplementedError: Haven't supported cml yet!, try ['mf', 'lgn']

@@ -1,0 +1,134 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.4
+    code_path: code/code/main.py
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.7
+    start_time: 1688412500.323283
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 1
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.7.7
+      5: 0.13.4
+      8:
+      - 5
+alpha:
+  desc: null
+  value: 1.25
+batch_size:
+  desc: null
+  value: 1000
+beta:
+  desc: null
+  value: 5.0
+comb_method:
+  desc: null
+  value: sum
+dataset:
+  desc: null
+  value: amazon-grocery
+decay:
+  desc: null
+  value: 0.0001
+dim:
+  desc: null
+  value: 64
+dropout:
+  desc: null
+  value: 0
+ema:
+  desc: null
+  value: false
+ema_decay:
+  desc: null
+  value: 0.995
+epochs:
+  desc: null
+  value: 1000
+folds:
+  desc: null
+  value: 100
+gfml:
+  desc: null
+  value: true
+gfml_opt:
+  desc: null
+  value: 0
+gpu_id:
+  desc: null
+  value: 2
+keep_prob:
+  desc: null
+  value: 0.8
+lamb_n:
+  desc: null
+  value: 1.0
+lamb_p:
+  desc: null
+  value: 1.2
+lambd:
+  desc: null
+  value: 0.01
+lambn:
+  desc: null
+  value: -0.5
+lambp:
+  desc: null
+  value: 6.5
+layer:
+  desc: null
+  value: 3
+load:
+  desc: null
+  value: 0
+lr:
+  desc: null
+  value: 1.0e-06
+margin:
+  desc: null
+  value: 1.0
+mix:
+  desc: null
+  value: false
+mix_ratio:
+  desc: null
+  value: 0.5
+multicore:
+  desc: null
+  value: 1
+num_neg:
+  desc: null
+  value: 10
+pretrain:
+  desc: null
+  value: 0
+seed:
+  desc: null
+  value: 2020
+split:
+  desc: null
+  value: 0
+tensorboard:
+  desc: null
+  value: 0
+testbatch:
+  desc: null
+  value: 100
+topks:
+  desc: null
+  value: '[5, 10, 20]'

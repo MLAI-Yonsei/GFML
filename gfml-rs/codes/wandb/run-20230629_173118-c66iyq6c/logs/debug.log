@@ -1,0 +1,34 @@
+2023-06-29 17:31:18,802 INFO    MainThread:135048 [wandb_setup.py:_flush():68] Configure stats pid to 135048
+2023-06-29 17:31:18,802 INFO    MainThread:135048 [wandb_setup.py:_flush():68] Loading settings from /home/hoyun/.config/wandb/settings
+2023-06-29 17:31:18,802 INFO    MainThread:135048 [wandb_setup.py:_flush():68] Loading settings from /data1/deepdog/project/GFML/gfml-rs/codes/wandb/settings
+2023-06-29 17:31:18,802 INFO    MainThread:135048 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-06-29 17:31:18,802 INFO    MainThread:135048 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'gfml-rs/codes/main.py', 'program': '/data1/deepdog/project/GFML/gfml-rs/codes/main.py'}
+2023-06-29 17:31:18,803 INFO    MainThread:135048 [wandb_init.py:_log_setup():476] Logging user logs to /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_173118-c66iyq6c/logs/debug.log
+2023-06-29 17:31:18,803 INFO    MainThread:135048 [wandb_init.py:_log_setup():477] Logging internal logs to /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_173118-c66iyq6c/logs/debug-internal.log
+2023-06-29 17:31:18,803 INFO    MainThread:135048 [wandb_init.py:init():516] calling init triggers
+2023-06-29 17:31:18,803 INFO    MainThread:135048 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'bpr_batch': 2048, 'recdim': 64, 'layer': 3, 'lr': 0.0001, 'decay': 0.001, 'dropout': 0, 'keepprob': 0.6, 'a_fold': 100, 'testbatch': 100, 'dataset': 'ml1m', 'path': './checkpoints', 'topks': '[5, 10, 20]', 'tensorboard': 0, 'comment': 'lgn', 'load': 0, 'epochs': 1000, 'multicore': 0, 'pretrain': 0, 'seed': 2020, 'model': 'cml', 'lamb': 2.0, 'mix_ratio': 0.4, 'loss_mode': 'cml', 'dist_mode': 'l2', 'exp_name': 'Apple', 'ema_on': 0, 'emb_norm': 1, 'weight_decay': 0.001, 'lr_decay': 0.01, 'mass_mode': 'both', 'gpu_id': 3, 'ES': 1, 'infer_mode': 'mat', 'lam_d': 0.995, 'features': None, 'margin': 1.0, 'master_learning_rate': 0.1, 'clip_norm': 1, 'hidden_layer_dim': 64, 'dropout_rate': 0.2, 'feature_l2_reg': 0.1, 'feature_projection_scaling_factor': 0.5, 'use_rank_weight': False, 'use_cov_loss': False, 'cov_loss_weight': 1.0}
+2023-06-29 17:31:18,803 INFO    MainThread:135048 [wandb_init.py:init():569] starting backend
+2023-06-29 17:31:18,803 INFO    MainThread:135048 [wandb_init.py:init():573] setting up manager
+2023-06-29 17:31:18,806 INFO    MainThread:135048 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-06-29 17:31:18,809 INFO    MainThread:135048 [wandb_init.py:init():580] backend started and connected
+2023-06-29 17:31:18,812 INFO    MainThread:135048 [wandb_init.py:init():658] updated telemetry
+2023-06-29 17:31:18,826 INFO    MainThread:135048 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-06-29 17:31:19,379 INFO    MainThread:135048 [wandb_run.py:_on_init():2000] communicating current version
+2023-06-29 17:31:19,459 INFO    MainThread:135048 [wandb_run.py:_on_init():2004] got version response upgrade_message: "wandb version 0.15.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-06-29 17:31:19,460 INFO    MainThread:135048 [wandb_init.py:init():728] starting run threads in backend
+2023-06-29 17:31:23,208 INFO    MainThread:135048 [wandb_run.py:_console_start():1980] atexit reg
+2023-06-29 17:31:23,209 INFO    MainThread:135048 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2023-06-29 17:31:23,209 INFO    MainThread:135048 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2023-06-29 17:31:23,209 INFO    MainThread:135048 [wandb_run.py:_redirect():1925] Redirects installed.
+2023-06-29 17:31:23,210 INFO    MainThread:135048 [wandb_init.py:init():765] run started, returning control to user process
+2023-06-29 17:31:23,211 INFO    MainThread:135048 [wandb_run.py:_config_callback():1160] config_cb None None {'bpr_batch': 2048, 'recdim': 64, 'layer': 3, 'lr': 0.0001, 'decay': 0.001, 'dropout': 0, 'keepprob': 0.6, 'a_fold': 100, 'testbatch': 100, 'dataset': 'ml1m', 'path': './checkpoints', 'topks': '[5, 10, 20]', 'tensorboard': 0, 'comment': 'lgn', 'load': 0, 'epochs': 1000, 'multicore': 0, 'pretrain': 0, 'seed': 2020, 'model': 'cml', 'lamb': 2.0, 'mix_ratio': 0.4, 'loss_mode': 'cml', 'dist_mode': 'l2', 'exp_name': 'Apple', 'ema_on': 0, 'emb_norm': 1, 'weight_decay': 0.001, 'lr_decay': 0.01, 'mass_mode': 'both', 'gpu_id': 3, 'ES': 1, 'infer_mode': 'mat', 'lam_d': 0.995, 'features': None, 'margin': 1.0, 'master_learning_rate': 0.1, 'clip_norm': 1, 'hidden_layer_dim': 64, 'dropout_rate': 0.2, 'feature_l2_reg': 0.1, 'feature_projection_scaling_factor': 0.5, 'use_rank_weight': False, 'use_cov_loss': False, 'cov_loss_weight': 1.0}
+2023-06-29 17:31:30,265 INFO    MainThread:135048 [wandb_watch.py:watch():51] Watching
+2023-06-29 18:20:16,149 INFO    MainThread:135048 [wandb_run.py:_finish():1746] finishing run hoyoon/GFML_Revision/c66iyq6c
+2023-06-29 18:20:16,149 INFO    MainThread:135048 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2023-06-29 18:20:16,149 INFO    MainThread:135048 [wandb_run.py:_restore():1932] restore
+2023-06-29 18:20:16,149 INFO    MainThread:135048 [wandb_run.py:_restore():1938] restore done
+2023-06-29 18:20:21,984 INFO    MainThread:135048 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2023-06-29 18:20:21,986 INFO    MainThread:135048 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2023-06-29 18:20:21,991 INFO    MainThread:135048 [wandb_run.py:_footer_sync_info():3333] logging synced files

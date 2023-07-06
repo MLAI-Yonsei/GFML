@@ -1,0 +1,62 @@
+
+Epoch 1/1000
+aver metric loss5.436e+00, aver reg loss2.065e-06
+Total time 18.869752168655396
+Epoch 2/1000
+aver metric loss5.424e+00, aver reg loss4.528e-06
+Total time 17.623034477233887
+Epoch 3/1000
+aver metric loss5.429e+00, aver reg loss6.141e-06
+Total time 17.73920512199402
+Epoch 4/1000
+aver metric loss5.444e+00, aver reg loss9.289e-06
+Total time 16.83258080482483
+Epoch 5/1000
+aver metric loss5.461e+00, aver reg loss1.357e-05
+Total time 17.909191608428955
+Epoch 6/1000
+aver metric loss5.412e+00, aver reg loss1.006e-05
+Total time 18.3634991645813
+Epoch 7/1000
+aver metric loss5.395e+00, aver reg loss1.036e-05
+Total time 16.312580108642578
+Epoch 8/1000
+aver metric loss5.426e+00, aver reg loss1.149e-05
+Total time 17.621633768081665
+Epoch 9/1000
+aver metric loss5.411e+00, aver reg loss1.252e-05
+Total time 16.001216173171997
+Epoch 10/1000
+{'precision': array([0.01807427, 0.01596   , 0.01370549]), 'recall': array([0.01461768, 0.02526912, 0.04247547]), 'ndcg': array([0.02051398, 0.02382877, 0.03010001])}
+Best so far: [0.01461768 0.02526912 0.04247547 0.02051398 0.02382877 0.03010001]
+aver metric loss5.463e+00, aver reg loss1.526e-05
+Total time 27.989333868026733
+Epoch 11/1000
+aver metric loss5.380e+00, aver reg loss1.449e-05
+Total time 17.694910287857056
+Epoch 12/1000
+aver metric loss5.383e+00, aver reg loss1.517e-05
+Total time 17.59325623512268
+Epoch 13/1000
+aver metric loss5.385e+00, aver reg loss1.602e-05
+Total time 17.393755674362183
+Epoch 14/1000
+aver metric loss5.393e+00, aver reg loss1.684e-05
+Total time 15.655803203582764
+Epoch 15/1000
+aver metric loss5.393e+00, aver reg loss1.798e-05
+Total time 16.680137157440186
+Epoch 16/1000
+aver metric loss5.362e+00, aver reg loss1.695e-05
+Total time 17.269449710845947
+Epoch 17/1000
+Traceback (most recent call last):
+  File "main.py", line 123, in <module>
+    output_information = Procedure.Metric_train_original(args, dataset, model, metric, epoch, sampler, w)
+  File "/data1/deepdog/project/GFML/MCL/code/Procedure.py", line 34, in Metric_train_original
+    metric_loss, reg_loss, pos_loss, neg_loss = metric.stageOne(S, num_items_per_user)
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 39, in stageOne
+    metric_loss, reg_loss, pos_loss, neg_loss = self.model.loss(S, num_items_per_user)
+  File "/data1/deepdog/project/GFML/MCL/code/model.py", line 150, in loss
+    users = torch.Tensor(S[:, 0]).long()
+KeyboardInterrupt

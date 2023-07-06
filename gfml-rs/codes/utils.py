@@ -56,6 +56,8 @@ class BPRLoss:
     def stageOne(self, users, pos, neg):
         if self.loss_mode in ["dot", "gravity", "mix", "bpr_gra", "mix_bpr"]:
             loss = self.model.bpr_loss(users, pos, neg)
+        elif self.loss_mode == "cml":
+            loss = self.model.loss(users, pos, neg)
         else:
             loss, reg_loss = self.model.bpr_loss(users, pos, neg)
             reg_loss = reg_loss * self.decay
@@ -130,7 +132,9 @@ def getFileName():
         file = f"mf-{world.dataset}-{world.config['latent_dim_rec']}.pth.tar"
     elif world.model_name == 'lgn':
         file = f"lgn-{world.dataset}-{world.config['lightGCN_n_layers']}-{world.config['latent_dim_rec']}.pth.tar"
-    return os.path.join(world.FILE_PATH,file)
+    elif world.model_name == 'cml':
+        file = f"cml--{world.dataset}-{world.config['latent_dim_rec']}.pth.tar"
+    return os.path.join(world.FILE_PATH, file)
 
 def minibatch(*tensors, **kwargs):
 

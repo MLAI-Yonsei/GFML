@@ -1,0 +1,47 @@
+Cpp extension not loaded
+>>SEED: 2020
+loading [../data/ml1m]
+818715 interactions for training
+200041 interactions for testing
+ml1m Sparsity : 0.0455121996547571
+ml1m is ready to go
+===========config================
+{'A_n_fold': 100,
+ 'A_split': False,
+ 'Early_Stopping': 1,
+ 'bigdata': False,
+ 'bpr_batch_size': 2048,
+ 'clip_norm': 1,
+ 'cov_loss_weight': 1.0,
+ 'decay': 0.0001,
+ 'dropout': 0,
+ 'dropout_rate': 0.2,
+ 'ema_on': 0,
+ 'feature_l2_reg': 0.1,
+ 'feature_projection_scaling_factor': 0.5,
+ 'features': None,
+ 'hidden_layer_dim': 64,
+ 'infer_mode': 'mat',
+ 'keep_prob': 0.6,
+ 'latent_dim_rec': 64,
+ 'lightGCN_n_layers': 3,
+ 'loss_mode': 'cml',
+ 'lr': 0.0004,
+ 'lr_decay': 0.01,
+ 'margin': 1.0,
+ 'mass_mode': 'both',
+ 'master_learning_rate': 0.1,
+ 'multicore': 0,
+ 'pretrain': 0,
+ 'recdim': 64,
+ 'test_u_batch_size': 100,
+ 'use_cov_loss': False,
+ 'use_rank_weight': True,
+ 'wd': 0.0003}
+cores for test: 56
+comment: lgn
+tensorboard: 0
+LOAD: 0
+Weight path: ./checkpoints
+Test Topks: [5, 10, 20]
+using bpr loss

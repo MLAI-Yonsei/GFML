@@ -1,0 +1,235 @@
+Cpp extension not loaded
+>>SEED: 2020
+loading [../data/ml1m]
+818715 interactions for training
+200041 interactions for testing
+ml1m Sparsity : 0.0455121996547571
+ml1m is ready to go
+===========config================
+{'A_n_fold': 100,
+ 'A_split': False,
+ 'Early_Stopping': 1,
+ 'bigdata': False,
+ 'bpr_batch_size': 2048,
+ 'decay': 0.004033682136567116,
+ 'dropout': 0,
+ 'ema_on': 1,
+ 'infer_mode': 'mat',
+ 'keep_prob': 0.6,
+ 'latent_dim_rec': 64,
+ 'lightGCN_n_layers': 3,
+ 'loss_mode': 'mix_bpr',
+ 'lr': 0.0005623164777448317,
+ 'lr_decay': 0.01,
+ 'mass_mode': 'both',
+ 'multicore': 0,
+ 'pretrain': 0,
+ 'test_u_batch_size': 100,
+ 'wd': 0.08764474435122023}
+cores for test: 56
+comment: lgn
+tensorboard: 0
+LOAD: 0
+Weight path: ./checkpoints
+Test Topks: [5, 10, 20]
+using bpr loss
+===========end===================
+mf : mix_bpr_act_fun_elu_lambda_3.0824860422368356
+using Normal distribution N(0,1) initialization for PureMF
+**********************************
+PureMF(
+  (act): Sigmoid()
+  (bce): BCELoss()
+  (f): Sigmoid()
+  (mass_u): Embedding(6040, 1)
+  (mass_i): Embedding(3706, 1)
+  (act_fun): ELU(alpha=1.0)
+  (relu): ReLU()
+  (embedding_user): Embedding(6040, 64)
+  (embedding_item): Embedding(3706, 64)
+)
+This model is mf
+load and save to ../light-gcn/codes/checkpoints/mf-ml1m-64.pth.tar
+[TEST]
+{'precision': array([0.00935168, 0.00892058, 0.00897032]), 'recall': array([0.00153391, 0.0030762 , 0.00566073]), 'ndcg': array([0.00928425, 0.00928081, 0.00987655])}
+EPOCH[1/1000] loss0.683-|Sample:9.82|
+EPOCH[2/1000] loss0.537-|Sample:10.89|
+EPOCH[3/1000] loss0.398-|Sample:10.98|
+EPOCH[4/1000] loss0.366-|Sample:10.12|
+EPOCH[5/1000] loss0.348-|Sample:11.56|
+EPOCH[6/1000] loss0.333-|Sample:11.16|
+EPOCH[7/1000] loss0.324-|Sample:10.90|
+EPOCH[8/1000] loss0.315-|Sample:11.18|
+EPOCH[9/1000] loss0.308-|Sample:11.07|
+EPOCH[10/1000] loss0.302-|Sample:10.92|
+[TEST]
+{'precision': array([0.30353175, 0.25295971, 0.20698889]), 'recall': array([0.06787524, 0.10938495, 0.1719243 ]), 'ndcg': array([0.32464011, 0.29167746, 0.27371539])}
+EPOCH[11/1000] loss0.298-|Sample:10.41|
+EPOCH[12/1000] loss0.293-|Sample:10.81|
+EPOCH[13/1000] loss0.288-|Sample:10.64|
+EPOCH[14/1000] loss0.286-|Sample:10.36|
+EPOCH[15/1000] loss0.283-|Sample:10.97|
+EPOCH[16/1000] loss0.280-|Sample:10.91|
+EPOCH[17/1000] loss0.277-|Sample:10.91|
+EPOCH[18/1000] loss0.275-|Sample:10.26|
+EPOCH[19/1000] loss0.273-|Sample:10.72|
+EPOCH[20/1000] loss0.271-|Sample:11.00|
+[TEST]
+{'precision': array([0.3429282 , 0.29099652, 0.23846792]), 'recall': array([0.07986491, 0.13134762, 0.20246003]), 'ndcg': array([0.36373088, 0.33227115, 0.31420744])}
+EPOCH[21/1000] loss0.269-|Sample:10.43|
+EPOCH[22/1000] loss0.267-|Sample:10.59|
+EPOCH[23/1000] loss0.265-|Sample:10.17|
+EPOCH[24/1000] loss0.264-|Sample:11.09|
+EPOCH[25/1000] loss0.263-|Sample:10.84|
+EPOCH[26/1000] loss0.261-|Sample:10.98|
+EPOCH[27/1000] loss0.259-|Sample:11.24|
+EPOCH[28/1000] loss0.259-|Sample:10.64|
+EPOCH[29/1000] loss0.258-|Sample:10.98|
+EPOCH[30/1000] loss0.257-|Sample:9.91|
+[TEST]
+{'precision': array([0.36043774, 0.30771016, 0.2520063 ]), 'recall': array([0.08544612, 0.13958517, 0.21495903]), 'ndcg': array([0.38193113, 0.35051982, 0.3319667 ])}
+EPOCH[31/1000] loss0.256-|Sample:10.37|
+EPOCH[32/1000] loss0.255-|Sample:10.94|
+EPOCH[33/1000] loss0.255-|Sample:10.90|
+EPOCH[34/1000] loss0.253-|Sample:10.96|
+EPOCH[35/1000] loss0.252-|Sample:10.94|
+EPOCH[36/1000] loss0.252-|Sample:10.92|
+EPOCH[37/1000] loss0.251-|Sample:10.91|
+EPOCH[38/1000] loss0.251-|Sample:8.78|
+EPOCH[39/1000] loss0.250-|Sample:11.82|
+EPOCH[40/1000] loss0.249-|Sample:10.78|
+[TEST]
+{'precision': array([0.36644006, 0.31411043, 0.25924391]), 'recall': array([0.08759436, 0.14348785, 0.22308539]), 'ndcg': array([0.38749449, 0.35692727, 0.34017978])}
+EPOCH[41/1000] loss0.249-|Sample:11.03|
+EPOCH[42/1000] loss0.248-|Sample:10.89|
+EPOCH[43/1000] loss0.248-|Sample:10.91|
+EPOCH[44/1000] loss0.248-|Sample:10.70|
+EPOCH[45/1000] loss0.247-|Sample:11.03|
+EPOCH[46/1000] loss0.246-|Sample:10.78|
+EPOCH[47/1000] loss0.247-|Sample:10.93|
+EPOCH[48/1000] loss0.246-|Sample:10.87|
+EPOCH[49/1000] loss0.245-|Sample:10.34|
+EPOCH[50/1000] loss0.245-|Sample:10.95|
+[TEST]
+{'precision': array([0.37065163, 0.32034488, 0.26379539]), 'recall': array([0.08876533, 0.14796263, 0.22825232]), 'ndcg': array([0.39263213, 0.36394682, 0.34651853])}
+EPOCH[51/1000] loss0.244-|Sample:10.24|
+EPOCH[52/1000] loss0.245-|Sample:10.75|
+EPOCH[53/1000] loss0.244-|Sample:10.27|
+EPOCH[54/1000] loss0.243-|Sample:11.32|
+EPOCH[55/1000] loss0.243-|Sample:10.33|
+EPOCH[56/1000] loss0.243-|Sample:11.05|
+EPOCH[57/1000] loss0.242-|Sample:10.90|
+EPOCH[58/1000] loss0.241-|Sample:11.04|
+EPOCH[59/1000] loss0.242-|Sample:11.92|
+EPOCH[60/1000] loss0.241-|Sample:11.28|
+[TEST]
+{'precision': array([0.37293981, 0.32255016, 0.26688775]), 'recall': array([0.08948566, 0.14878719, 0.23115651]), 'ndcg': array([0.39501927, 0.36608063, 0.34978941])}
+EPOCH[61/1000] loss0.241-|Sample:10.35|
+EPOCH[62/1000] loss0.241-|Sample:10.94|
+EPOCH[63/1000] loss0.241-|Sample:11.00|
+EPOCH[64/1000] loss0.241-|Sample:10.94|
+EPOCH[65/1000] loss0.240-|Sample:10.51|
+EPOCH[66/1000] loss0.240-|Sample:10.43|
+EPOCH[67/1000] loss0.240-|Sample:11.11|
+EPOCH[68/1000] loss0.239-|Sample:11.16|
+EPOCH[69/1000] loss0.240-|Sample:11.55|
+EPOCH[70/1000] loss0.240-|Sample:10.60|
+[TEST]
+{'precision': array([0.37735036, 0.32578345, 0.26973139]), 'recall': array([0.09049504, 0.15149032, 0.23496973]), 'ndcg': array([0.39901923, 0.3697619 , 0.35380661])}
+EPOCH[71/1000] loss0.239-|Sample:11.01|
+EPOCH[72/1000] loss0.239-|Sample:10.81|
+EPOCH[73/1000] loss0.239-|Sample:11.05|
+EPOCH[74/1000] loss0.238-|Sample:11.15|
+EPOCH[75/1000] loss0.238-|Sample:10.04|
+EPOCH[76/1000] loss0.238-|Sample:10.02|
+EPOCH[77/1000] loss0.238-|Sample:11.26|
+EPOCH[78/1000] loss0.238-|Sample:11.39|
+EPOCH[79/1000] loss0.238-|Sample:11.46|
+EPOCH[80/1000] loss0.238-|Sample:10.99|
+[TEST]
+{'precision': array([0.37861051, 0.32817112, 0.27046924]), 'recall': array([0.09136824, 0.15242239, 0.23549629]), 'ndcg': array([0.39947412, 0.37155735, 0.35499986])}
+EPOCH[81/1000] loss0.238-|Sample:11.19|
+EPOCH[82/1000] loss0.237-|Sample:10.82|
+EPOCH[83/1000] loss0.237-|Sample:10.93|
+EPOCH[84/1000] loss0.237-|Sample:10.79|
+EPOCH[85/1000] loss0.237-|Sample:10.01|
+EPOCH[86/1000] loss0.237-|Sample:10.38|
+EPOCH[87/1000] loss0.236-|Sample:10.94|
+EPOCH[88/1000] loss0.236-|Sample:9.94|
+EPOCH[89/1000] loss0.236-|Sample:9.63|
+EPOCH[90/1000] loss0.236-|Sample:9.49|
+[TEST]
+{'precision': array([0.38192671, 0.33105621, 0.27304759]), 'recall': array([0.09258095, 0.15303753, 0.23801473]), 'ndcg': array([0.4040372 , 0.37525481, 0.35868106])}
+EPOCH[91/1000] loss0.236-|Sample:10.26|
+EPOCH[92/1000] loss0.236-|Sample:10.10|
+EPOCH[93/1000] loss0.236-|Sample:9.62|
+EPOCH[94/1000] loss0.236-|Sample:11.50|
+EPOCH[95/1000] loss0.236-|Sample:10.97|
+EPOCH[96/1000] loss0.235-|Sample:9.43|
+EPOCH[97/1000] loss0.235-|Sample:12.12|
+EPOCH[98/1000] loss0.235-|Sample:12.82|
+EPOCH[99/1000] loss0.235-|Sample:11.56|
+EPOCH[100/1000] loss0.235-|Sample:10.46|
+[TEST]
+{'precision': array([0.38305422, 0.33342729, 0.27415851]), 'recall': array([0.09289703, 0.15535287, 0.23981886]), 'ndcg': array([0.40452695, 0.37698399, 0.35994544])}
+EPOCH[101/1000] loss0.235-|Sample:10.63|
+EPOCH[102/1000] loss0.235-|Sample:12.02|
+EPOCH[103/1000] loss0.235-|Sample:12.64|
+EPOCH[104/1000] loss0.235-|Sample:11.57|
+EPOCH[105/1000] loss0.235-|Sample:11.02|
+EPOCH[106/1000] loss0.235-|Sample:12.56|
+EPOCH[107/1000] loss0.234-|Sample:11.30|
+EPOCH[108/1000] loss0.234-|Sample:10.96|
+EPOCH[109/1000] loss0.234-|Sample:10.85|
+EPOCH[110/1000] loss0.234-|Sample:10.27|
+[TEST]
+{'precision': array([0.38312054, 0.33365943, 0.27553474]), 'recall': array([0.0924469 , 0.15535074, 0.24059832]), 'ndcg': array([0.40417323, 0.37706831, 0.36094608])}
+EPOCH[111/1000] loss0.234-|Sample:11.32|
+EPOCH[112/1000] loss0.234-|Sample:10.62|
+EPOCH[113/1000] loss0.234-|Sample:9.95|
+EPOCH[114/1000] loss0.234-|Sample:11.99|
+EPOCH[115/1000] loss0.234-|Sample:12.27|
+EPOCH[116/1000] loss0.234-|Sample:12.64|
+EPOCH[117/1000] loss0.234-|Sample:12.53|
+EPOCH[118/1000] loss0.233-|Sample:11.24|
+EPOCH[119/1000] loss0.234-|Sample:10.82|
+EPOCH[120/1000] loss0.233-|Sample:10.97|
+[TEST]
+{'precision': array([0.38358481, 0.33384182, 0.27516996]), 'recall': array([0.09307967, 0.15615294, 0.24046994]), 'ndcg': array([0.40415539, 0.37731365, 0.36089385])}
+EPOCH[121/1000] loss0.233-|Sample:9.27|
+EPOCH[122/1000] loss0.233-|Sample:12.49|
+EPOCH[123/1000] loss0.233-|Sample:11.16|
+EPOCH[124/1000] loss0.233-|Sample:9.94|
+EPOCH[125/1000] loss0.233-|Sample:10.92|
+EPOCH[126/1000] loss0.233-|Sample:10.64|
+EPOCH[127/1000] loss0.233-|Sample:9.64|
+EPOCH[128/1000] loss0.233-|Sample:10.38|
+EPOCH[129/1000] loss0.233-|Sample:10.99|
+EPOCH[130/1000] loss0.233-|Sample:10.73|
+[TEST]
+{'precision': array([0.3853424 , 0.33379207, 0.27588294]), 'recall': array([0.09336514, 0.15521101, 0.24197088]), 'ndcg': array([0.40628782, 0.37791481, 0.36242618])}
+EPOCH[131/1000] loss0.233-|Sample:9.95|
+EPOCH[132/1000] loss0.233-|Sample:11.69|
+EPOCH[133/1000] loss0.233-|Sample:10.67|
+EPOCH[134/1000] loss0.233-|Sample:11.77|
+EPOCH[135/1000] loss0.233-|Sample:10.95|
+EPOCH[136/1000] loss0.233-|Sample:10.93|
+EPOCH[137/1000] loss0.233-|Sample:11.34|
+EPOCH[138/1000] loss0.233-|Sample:11.67|
+EPOCH[139/1000] loss0.233-|Sample:11.78|
+EPOCH[140/1000] loss0.233-|Sample:11.62|
+[TEST]
+{'precision': array([0.38385011, 0.33473719, 0.27807163]), 'recall': array([0.09337987, 0.15631249, 0.24373725]), 'ndcg': array([0.40504078, 0.37823934, 0.36358595])}
+EPOCH[141/1000] loss0.232-|Sample:9.89|
+EPOCH[142/1000] loss0.233-|Sample:9.96|
+EPOCH[143/1000] loss0.232-|Sample:11.08|
+EPOCH[144/1000] loss0.232-|Sample:11.03|
+EPOCH[145/1000] loss0.233-|Sample:10.55|
+Traceback (most recent call last):
+  File "/data1/deepdog/project/GFML/gfml-rs/codes/main.py", line 82, in <module>
+    output_information = Procedure.BPR_train_original(dataset, Recmodel, bpr, epoch, neg_k=Neg_k, w=w)
+  File "/data1/deepdog/project/GFML/gfml-rs/codes/Procedure.py", line 31, in BPR_train_original
+    S = utils.UniformSample_original(dataset)
+  File "/data1/deepdog/project/GFML/gfml-rs/codes/utils.py", line 81, in UniformSample_original
+  File "/data1/deepdog/project/GFML/gfml-rs/codes/utils.py", line 112, in UniformSample_original_python
+    sample_time2 += time() - start

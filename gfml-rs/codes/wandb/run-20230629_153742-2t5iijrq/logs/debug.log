@@ -1,0 +1,27 @@
+2023-06-29 15:37:42,736 INFO    MainThread:36459 [wandb_setup.py:_flush():68] Configure stats pid to 36459
+2023-06-29 15:37:42,736 INFO    MainThread:36459 [wandb_setup.py:_flush():68] Loading settings from /home/hoyun/.config/wandb/settings
+2023-06-29 15:37:42,736 INFO    MainThread:36459 [wandb_setup.py:_flush():68] Loading settings from /data1/deepdog/project/GFML/gfml-rs/codes/wandb/settings
+2023-06-29 15:37:42,736 INFO    MainThread:36459 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-06-29 15:37:42,736 INFO    MainThread:36459 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'gfml-rs/codes/main.py', 'program': '/data1/deepdog/project/GFML/gfml-rs/codes/main.py'}
+2023-06-29 15:37:42,736 INFO    MainThread:36459 [wandb_init.py:_log_setup():476] Logging user logs to /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_153742-2t5iijrq/logs/debug.log
+2023-06-29 15:37:42,737 INFO    MainThread:36459 [wandb_init.py:_log_setup():477] Logging internal logs to /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_153742-2t5iijrq/logs/debug-internal.log
+2023-06-29 15:37:42,737 INFO    MainThread:36459 [wandb_init.py:init():516] calling init triggers
+2023-06-29 15:37:42,737 INFO    MainThread:36459 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'bpr_batch': 2048, 'recdim': 64, 'layer': 3, 'lr': 0.0005623164777448317, 'decay': 0.004033682136567116, 'dropout': 0, 'keepprob': 0.6, 'a_fold': 100, 'testbatch': 100, 'dataset': 'ml1m', 'path': './checkpoints', 'topks': '[5, 10, 20]', 'tensorboard': 0, 'comment': 'lgn', 'load': 0, 'epochs': 1000, 'multicore': 0, 'pretrain': 0, 'seed': 2020, 'model': 'mf', 'lamb': 3.0824860422368356, 'mix_ratio': 0.2, 'loss_mode': 'mix_bpr', 'dist_mode': 'l2', 'exp_name': 'Apple', 'ema_on': 1, 'emb_norm': 1, 'weight_decay': 0.08764474435122023, 'lr_decay': 0.01, 'mass_mode': 'both', 'gpu_id': 3, 'ES': 1, 'infer_mode': 'mat', 'lam_d': 0.995}
+2023-06-29 15:37:42,737 INFO    MainThread:36459 [wandb_init.py:init():569] starting backend
+2023-06-29 15:37:42,737 INFO    MainThread:36459 [wandb_init.py:init():573] setting up manager
+2023-06-29 15:37:42,739 INFO    MainThread:36459 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-06-29 15:37:42,743 INFO    MainThread:36459 [wandb_init.py:init():580] backend started and connected
+2023-06-29 15:37:42,746 INFO    MainThread:36459 [wandb_init.py:init():658] updated telemetry
+2023-06-29 15:37:42,762 INFO    MainThread:36459 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-06-29 15:37:43,331 INFO    MainThread:36459 [wandb_run.py:_on_init():2000] communicating current version
+2023-06-29 15:37:43,405 INFO    MainThread:36459 [wandb_run.py:_on_init():2004] got version response upgrade_message: "wandb version 0.15.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-06-29 15:37:43,406 INFO    MainThread:36459 [wandb_init.py:init():728] starting run threads in backend
+2023-06-29 15:37:47,395 INFO    MainThread:36459 [wandb_run.py:_console_start():1980] atexit reg
+2023-06-29 15:37:47,395 INFO    MainThread:36459 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2023-06-29 15:37:47,395 INFO    MainThread:36459 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2023-06-29 15:37:47,396 INFO    MainThread:36459 [wandb_run.py:_redirect():1925] Redirects installed.
+2023-06-29 15:37:47,396 INFO    MainThread:36459 [wandb_init.py:init():765] run started, returning control to user process
+2023-06-29 15:37:47,401 INFO    MainThread:36459 [wandb_run.py:_config_callback():1160] config_cb None None {'bpr_batch': 2048, 'recdim': 64, 'layer': 3, 'lr': 0.0005623164777448317, 'decay': 0.004033682136567116, 'dropout': 0, 'keepprob': 0.6, 'a_fold': 100, 'testbatch': 100, 'dataset': 'ml1m', 'path': './checkpoints', 'topks': '[5, 10, 20]', 'tensorboard': 0, 'comment': 'lgn', 'load': 0, 'epochs': 1000, 'multicore': 0, 'pretrain': 0, 'seed': 2020, 'model': 'mf', 'lamb': 3.0824860422368356, 'mix_ratio': 0.2, 'loss_mode': 'mix_bpr', 'dist_mode': 'l2', 'exp_name': 'Apple', 'ema_on': 1, 'emb_norm': 1, 'weight_decay': 0.08764474435122023, 'lr_decay': 0.01, 'mass_mode': 'both', 'gpu_id': 3, 'ES': 1, 'infer_mode': 'mat', 'lam_d': 0.995}
+2023-06-29 15:37:58,841 WARNING MsgRouterThr:36459 [router.py:message_loop():77] message_loop has been closed

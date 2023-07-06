@@ -1,0 +1,33 @@
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_setup.py:_flush():68] Configure stats pid to 2942502
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_setup.py:_flush():68] Loading settings from /home/hoyun/.config/wandb/settings
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_setup.py:_flush():68] Loading settings from /data1/deepdog/project/GFML/MCL/code/wandb/settings
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'code/main.py', 'program': 'main.py'}
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_init.py:_log_setup():476] Logging user logs to /data1/deepdog/project/GFML/MCL/code/wandb/run-20230703_205035-knb1yu8t/logs/debug.log
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_init.py:_log_setup():477] Logging internal logs to /data1/deepdog/project/GFML/MCL/code/wandb/run-20230703_205035-knb1yu8t/logs/debug-internal.log
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_init.py:init():516] calling init triggers
+2023-07-03 20:50:35,324 INFO    MainThread:2942502 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {'split': 0, 'folds': 100, 'testbatch': 100, 'topks': '[5, 10, 20]', 'tensorboard': 0, 'load': 0, 'multicore': 1, 'pretrain': 0, 'seed': 2020, 'dropout': 0, 'keep_prob': 0.8, 'epochs': 1000, 'lr': 0.0001, 'batch_size': 1000, 'dim': 64, 'layer': 3, 'dataset': 'amazon-digital-music', 'comb_method': 'sum', 'num_neg': 10, 'decay': 0.0001, 'margin': 1.0, 'alpha': 1.25, 'beta': 5.0, 'lambp': 6.5, 'lambn': -0.5, 'gfml': False, 'gfml_opt': 0, 'mix': True, 'lambd': 5.0, 'gpu_id': 0, 'lamb_p': 1.2, 'lamb_n': 1.0, 'mix_ratio': 0.7, 'ema': False, 'ema_decay': 0.995}
+2023-07-03 20:50:35,325 INFO    MainThread:2942502 [wandb_init.py:init():569] starting backend
+2023-07-03 20:50:35,325 INFO    MainThread:2942502 [wandb_init.py:init():573] setting up manager
+2023-07-03 20:50:35,327 INFO    MainThread:2942502 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-03 20:50:35,330 INFO    MainThread:2942502 [wandb_init.py:init():580] backend started and connected
+2023-07-03 20:50:35,337 INFO    MainThread:2942502 [wandb_init.py:init():658] updated telemetry
+2023-07-03 20:50:35,479 INFO    MainThread:2942502 [wandb_init.py:init():694] communicating run to backend with 60 second timeout
+2023-07-03 20:50:36,016 INFO    MainThread:2942502 [wandb_run.py:_on_init():2000] communicating current version
+2023-07-03 20:50:36,067 INFO    MainThread:2942502 [wandb_run.py:_on_init():2004] got version response upgrade_message: "wandb version 0.15.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-07-03 20:50:36,067 INFO    MainThread:2942502 [wandb_init.py:init():728] starting run threads in backend
+2023-07-03 20:50:38,627 INFO    MainThread:2942502 [wandb_run.py:_console_start():1980] atexit reg
+2023-07-03 20:50:38,628 INFO    MainThread:2942502 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2023-07-03 20:50:38,628 INFO    MainThread:2942502 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2023-07-03 20:50:38,628 INFO    MainThread:2942502 [wandb_run.py:_redirect():1925] Redirects installed.
+2023-07-03 20:50:38,629 INFO    MainThread:2942502 [wandb_init.py:init():765] run started, returning control to user process
+2023-07-03 20:50:38,629 INFO    MainThread:2942502 [wandb_watch.py:watch():51] Watching
+2023-07-03 21:03:05,463 INFO    MainThread:2942502 [wandb_run.py:_finish():1746] finishing run hoyoon/GFML_Revision_MCL/knb1yu8t
+2023-07-03 21:03:05,464 INFO    MainThread:2942502 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2023-07-03 21:03:05,465 INFO    MainThread:2942502 [wandb_run.py:_restore():1932] restore
+2023-07-03 21:03:05,466 INFO    MainThread:2942502 [wandb_run.py:_restore():1938] restore done
+2023-07-03 21:03:10,099 INFO    MainThread:2942502 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2023-07-03 21:03:10,102 INFO    MainThread:2942502 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2023-07-03 21:03:10,104 INFO    MainThread:2942502 [wandb_run.py:_footer_sync_info():3333] logging synced files

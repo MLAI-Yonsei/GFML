@@ -57,4 +57,17 @@ def parse_args():
     parser.add_argument('--ES', type=int, default=1)
     parser.add_argument('--infer_mode', type=str, default='mat')
     parser.add_argument('--lam_d', type=float, default=0.995)
+
+    # CML hypara
+    parser.add_argument('--features', default=None)
+    parser.add_argument('--margin', type=float, default=1.9)
+    parser.add_argument('--master_learning_rate', type=float, default=0.1)
+    parser.add_argument('--clip_norm', type=int, default=1)
+    parser.add_argument('--hidden_layer_dim', type=int, default=64)
+    parser.add_argument('--dropout_rate', type=float, default=0.2)
+    parser.add_argument('--feature_l2_reg', type=float, default=0.1)
+    parser.add_argument('--feature_projection_scaling_factor', type=float, default=0.5)
+    parser.add_argument('--use_rank_weight', action='store_true')
+    parser.add_argument('--use_cov_loss', action='store_true')
+    parser.add_argument('--cov_loss_weight', type=float, default=1.0)
     return parser.parse_args()

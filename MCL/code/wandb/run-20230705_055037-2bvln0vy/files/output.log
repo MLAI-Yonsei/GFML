@@ -1,0 +1,164 @@
+
+Epoch 1/1000
+aver metric loss3.393e+00, aver reg loss5.463e-05
+Total time 18.824114084243774
+Epoch 2/1000
+aver metric loss3.446e+00, aver reg loss8.076e-05
+Total time 17.456159114837646
+Epoch 3/1000
+aver metric lossinf, aver reg loss9.047e-05
+Total time 17.291651964187622
+Epoch 4/1000
+aver metric loss4.427e+00, aver reg loss1.016e-04
+Total time 17.372453927993774
+Epoch 5/1000
+aver metric loss6.864e+00, aver reg loss1.259e-04
+Total time 17.300431728363037
+Epoch 6/1000
+aver metric lossnan, aver reg lossnan
+Total time 16.671077728271484
+Epoch 7/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.811618328094482
+Epoch 8/1000
+aver metric lossnan, aver reg lossnan
+Total time 16.960856437683105
+Epoch 9/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.878582239151
+Epoch 10/1000
+{'precision': array([6.36145369e-05, 6.05364142e-05, 5.79713119e-05]), 'recall': array([6.88630636e-05, 1.16075061e-04, 2.20410982e-04]), 'ndcg': array([9.78225850e-05, 1.13896793e-04, 1.47863625e-04])}
+Best so far: [6.88630636e-05 1.16075061e-04 2.20410982e-04 9.78225850e-05
+ 1.13896793e-04 1.47863625e-04]
+aver metric lossnan, aver reg lossnan
+Total time 45.028483867645264
+Epoch 11/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.670771837234497
+Epoch 12/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.223130226135254
+Epoch 13/1000
+aver metric lossnan, aver reg lossnan
+Total time 18.44072437286377
+Epoch 14/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.232244968414307
+Epoch 15/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.81945276260376
+Epoch 16/1000
+aver metric lossnan, aver reg lossnan
+Total time 15.53346848487854
+Epoch 17/1000
+aver metric lossnan, aver reg lossnan
+Total time 16.47609281539917
+Epoch 18/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.67371129989624
+Epoch 19/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.659987926483154
+Epoch 20/1000
+{'precision': array([6.36145369e-05, 6.05364142e-05, 5.79713119e-05]), 'recall': array([6.88630636e-05, 1.16075061e-04, 2.20410982e-04]), 'ndcg': array([9.78225850e-05, 1.13896793e-04, 1.47863625e-04])}
+Best so far: [6.88630636e-05 1.16075061e-04 2.20410982e-04 9.78225850e-05
+ 1.13896793e-04 1.47863625e-04]
+aver metric lossnan, aver reg lossnan
+Total time 42.994728088378906
+Epoch 21/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.0516459941864
+Epoch 22/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.33972191810608
+Epoch 23/1000
+aver metric lossnan, aver reg lossnan
+Total time 18.404914140701294
+Epoch 24/1000
+aver metric lossnan, aver reg lossnan
+Total time 18.619128942489624
+Epoch 25/1000
+aver metric lossnan, aver reg lossnan
+Total time 16.10302972793579
+Epoch 26/1000
+aver metric lossnan, aver reg lossnan
+Total time 18.101635694503784
+Epoch 27/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.284928560256958
+Epoch 28/1000
+aver metric lossnan, aver reg lossnan
+Total time 17.927128553390503
+Epoch 29/1000
+aver metric lossnan, aver reg lossnan
+Total time 16.99930191040039
+Epoch 30/1000
+{'precision': array([6.36145369e-05, 6.05364142e-05, 5.79713119e-05]), 'recall': array([6.88630636e-05, 1.16075061e-04, 2.20410982e-04]), 'ndcg': array([9.78225850e-05, 1.13896793e-04, 1.47863625e-04])}
+Best so far: [6.88630636e-05 1.16075061e-04 2.20410982e-04 9.78225850e-05
+ 1.13896793e-04 1.47863625e-04]
+aver metric lossnan, aver reg lossnan
+Total time 42.405277967453
+Epoch 31/1000
+aver metric lossnan, aver reg lossnan
+Total time 18.258516788482666
+Epoch 32/1000
+aver metric lossnan, aver reg lossnan
+Total time 18.477200031280518
+Epoch 33/1000
+aver metric lossnan, aver reg lossnan
+Total time 19.260745525360107
+Epoch 34/1000
+aver metric lossnan, aver reg lossnan
+Total time 21.09693145751953
+Epoch 35/1000
+aver metric lossnan, aver reg lossnan
+Total time 18.540237426757812
+Epoch 36/1000
+Process Process-5:
+Process Process-3:
+Process Process-2:
+Process Process-4:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 112, in UniformSample_original
+    for j, neg in enumerate(negatives):
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 113, in UniformSample_original
+    while neg in allPos[user]:
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+KeyboardInterrupt
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 113, in UniformSample_original
+    while neg in allPos[user]:
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 113, in UniformSample_original
+    while neg in allPos[user]:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 123, in <module>
+    output_information = Procedure.Metric_train_original(args, dataset, model, metric, epoch, sampler, w)
+  File "/data1/deepdog/project/GFML/MCL/code/Procedure.py", line 34, in Metric_train_original
+    metric_loss, reg_loss, pos_loss, neg_loss = metric.stageOne(S, num_items_per_user)
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 39, in stageOne
+    metric_loss, reg_loss, pos_loss, neg_loss = self.model.loss(S, num_items_per_user)
+  File "/data1/deepdog/project/GFML/MCL/code/model.py", line 195, in loss
+    pos_dist=pos_distances, neg_dist=min_neg_per_item)
+  File "/data1/deepdog/project/GFML/MCL/code/model.py", line 130, in gravity
+    up_dist = self.lambd * torch.log(pos_dist + 1)
+KeyboardInterrupt

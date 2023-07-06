@@ -1,0 +1,37 @@
+{
+    "os": "Linux-5.4.0-153-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.7",
+    "heartbeatAt": "2023-07-04T03:47:58.842163",
+    "startedAt": "2023-07-04T03:47:57.615576",
+    "docker": null,
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_count": 7,
+    "cpu_count": 112,
+    "cuda": null,
+    "args": [
+        "--dataset",
+        "amazon-digital-music",
+        "--alpha",
+        "1.25",
+        "--beta",
+        "5",
+        "--lambp",
+        "6.5",
+        "--lambn",
+        "-0.5",
+        "--gpu_id",
+        "1"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "code/main.py",
+    "git": {
+        "remote": "https://github.com/layer6ai-labs/MCL.git",
+        "commit": "c60e30763f8124fe02e79093c1138e4615181f63"
+    },
+    "email": "hoyunb@gmail.com",
+    "root": "/data1/deepdog/project/GFML/MCL",
+    "host": "devbox",
+    "username": "hoyun",
+    "executable": "/data1/deepdog/anaconda3/envs/mcl/bin/python"
+}

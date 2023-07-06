@@ -1,0 +1,30 @@
+
+Epoch 1/1000
+aver metric loss-1.611e-03, aver reg loss1.195e-05
+Total time 5.616453170776367
+Epoch 2/1000
+aver metric loss-4.810e-03, aver reg loss5.128e-05
+Total time 5.118993759155273
+Epoch 3/1000
+aver metric loss-5.349e-03, aver reg loss9.849e-05
+Total time 4.510845422744751
+Epoch 4/1000
+aver metric loss-5.310e-03, aver reg loss1.423e-04
+Total time 3.9498190879821777
+Epoch 5/1000
+Traceback (most recent call last):
+  File "main.py", line 102, in <module>
+    output_information = Procedure.Metric_train_original(args, dataset, model, metric, epoch, sampler, w)
+  File "/data1/deepdog/project/GFML/MCL/code/Procedure.py", line 32, in Metric_train_original
+    metric_loss, reg_loss = metric.stageOne(S, num_items_per_user)
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 32, in stageOne
+    self.opt.step()
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/site-packages/torch/optim/optimizer.py", line 88, in wrapper
+    return func(*args, **kwargs)
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/site-packages/torch/optim/adam.py", line 118, in step
+    eps=group['eps'])
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/site-packages/torch/optim/_functional.py", line 94, in adam
+    denom = (exp_avg_sq.sqrt() / math.sqrt(bias_correction2)).add_(eps)
+KeyboardInterrupt

@@ -1,0 +1,682 @@
+2023-07-06 03:10:11,459 INFO    StreamThr :501940 [internal.py:wandb_internal():91] W&B internal server running at pid: 501940, started at: 2023-07-06 03:10:11.455774
+2023-07-06 03:10:11,462 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: status
+2023-07-06 03:10:11,465 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: status
+2023-07-06 03:10:11,468 DEBUG   SenderThread:501940 [sender.py:send():303] send: header
+2023-07-06 03:10:11,468 INFO    WriterThread:501940 [datastore.py:open_for_write():75] open: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/run-1dxkd4wm.wandb
+2023-07-06 03:10:11,576 DEBUG   SenderThread:501940 [sender.py:send():303] send: run
+2023-07-06 03:10:12,124 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: check_version
+2023-07-06 03:10:12,126 INFO    SenderThread:501940 [dir_watcher.py:__init__():216] watching files in: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files
+2023-07-06 03:10:12,126 INFO    SenderThread:501940 [sender.py:_start_run_threads():931] run started: 1dxkd4wm with start time 1688613011.450538
+2023-07-06 03:10:12,126 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:10:12,126 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:10:12,127 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: check_version
+2023-07-06 03:10:12,211 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: run_start
+2023-07-06 03:10:12,220 DEBUG   HandlerThread:501940 [meta.py:__init__():34] meta init
+2023-07-06 03:10:12,220 DEBUG   HandlerThread:501940 [meta.py:__init__():49] meta init done
+2023-07-06 03:10:12,220 DEBUG   HandlerThread:501940 [meta.py:probe():215] probe
+2023-07-06 03:10:12,236 DEBUG   HandlerThread:501940 [meta.py:_setup_git():205] setup git
+2023-07-06 03:10:12,263 DEBUG   HandlerThread:501940 [meta.py:_setup_git():212] setup git done
+2023-07-06 03:10:12,263 DEBUG   HandlerThread:501940 [meta.py:_save_code():87] save code
+2023-07-06 03:10:12,273 DEBUG   HandlerThread:501940 [meta.py:_save_code():108] save code done
+2023-07-06 03:10:12,274 DEBUG   HandlerThread:501940 [meta.py:_save_patches():125] save patches
+2023-07-06 03:10:12,341 DEBUG   HandlerThread:501940 [meta.py:_save_patches():167] save patches done
+2023-07-06 03:10:12,341 DEBUG   HandlerThread:501940 [meta.py:_save_pip():53] save pip
+2023-07-06 03:10:12,342 DEBUG   HandlerThread:501940 [meta.py:_save_pip():67] save pip done
+2023-07-06 03:10:12,342 DEBUG   HandlerThread:501940 [meta.py:_save_conda():74] save conda
+2023-07-06 03:10:13,129 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/conda-environment.yaml
+2023-07-06 03:10:13,129 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/diff.patch
+2023-07-06 03:10:13,130 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/requirements.txt
+2023-07-06 03:10:13,130 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/code/code/main.py
+2023-07-06 03:10:13,130 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:10:13,130 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/code/code
+2023-07-06 03:10:13,130 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/code
+2023-07-06 03:10:15,304 DEBUG   HandlerThread:501940 [meta.py:_save_conda():84] save conda done
+2023-07-06 03:10:15,304 DEBUG   HandlerThread:501940 [meta.py:probe():253] probe done
+2023-07-06 03:10:15,341 DEBUG   SenderThread:501940 [sender.py:send():303] send: files
+2023-07-06 03:10:15,341 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-07-06 03:10:15,342 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file code/code/main.py with policy now
+2023-07-06 03:10:15,343 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file diff.patch with policy now
+2023-07-06 03:10:15,360 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:10:15,361 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:10:15,591 DEBUG   SenderThread:501940 [sender.py:send():303] send: telemetry
+2023-07-06 03:10:15,592 DEBUG   SenderThread:501940 [sender.py:send():303] send: telemetry
+2023-07-06 03:10:15,604 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:10:15,605 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:10:15,606 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:10:15,606 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:10:16,067 INFO    Thread-18 :501940 [upload_job.py:push():143] Uploaded file /tmp/tmpn665c15jwandb/2njtmqp7-code/code/main.py
+2023-07-06 03:10:16,095 INFO    Thread-17 :501940 [upload_job.py:push():143] Uploaded file /tmp/tmpn665c15jwandb/3no54sox-wandb-metadata.json
+2023-07-06 03:10:16,115 INFO    Thread-19 :501940 [upload_job.py:push():143] Uploaded file /tmp/tmpn665c15jwandb/edp6gnih-diff.patch
+2023-07-06 03:10:16,130 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:10:16,130 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/conda-environment.yaml
+2023-07-06 03:10:16,131 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-metadata.json
+2023-07-06 03:10:16,131 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:10:18,131 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:10:30,607 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:10:30,608 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:10:38,320 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:10:38,324 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:10:38,325 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:10:38,335 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:10:39,169 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:10:40,169 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:10:42,170 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/config.yaml
+2023-07-06 03:10:43,835 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:10:45,836 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:10:45,836 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:10:59,919 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:10:59,921 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:10:59,923 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:10:59,923 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:11:00,186 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:11:01,074 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:11:01,074 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:11:02,187 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:11:16,296 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:11:16,296 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:11:17,358 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:11:21,701 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:11:21,702 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:11:21,703 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:11:21,703 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:11:22,197 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:11:24,198 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:11:31,523 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:11:31,524 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:11:42,996 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:11:42,997 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:11:42,998 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:11:42,999 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:11:43,210 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:11:44,211 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:11:46,762 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:11:46,762 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:11:50,842 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:12:01,986 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:12:01,986 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:12:04,460 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:12:04,462 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:12:04,462 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:12:04,464 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:12:05,249 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:12:06,249 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:12:17,215 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:12:17,216 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:12:24,260 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:12:25,238 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:12:25,240 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:12:25,240 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:12:25,243 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:12:25,266 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:12:26,266 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:12:32,451 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:12:32,451 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:12:45,395 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:12:45,396 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:12:45,398 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:12:45,407 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:12:46,276 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:12:47,702 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:12:47,703 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:12:48,277 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:12:57,797 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:13:02,997 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:13:02,998 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:13:07,303 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:13:07,304 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:13:07,305 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:13:07,306 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:13:08,288 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:13:08,288 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:13:18,238 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:13:18,239 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:13:28,845 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:13:28,847 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:13:28,848 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:13:28,852 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:13:29,299 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:13:30,299 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:13:31,206 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:13:33,476 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:13:33,476 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:13:48,704 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:13:48,704 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:13:59,175 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:13:59,176 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:13:59,178 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:13:59,181 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:13:59,317 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:13:59,319 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:13:59,321 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:13:59,321 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:13:59,322 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:13:59,323 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:13:59,323 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:13:59,331 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:13:59,331 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:14:00,324 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:14:00,325 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:14:03,925 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:14:03,925 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:14:04,789 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:14:19,164 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:14:19,165 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:14:19,308 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:14:19,392 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:14:19,393 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:14:19,395 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:14:20,333 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:14:20,333 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:14:25,618 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:14:25,619 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:14:25,648 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:14:25,650 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:14:34,397 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:14:34,397 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:14:38,320 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:14:39,948 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:14:39,951 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:14:39,952 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:14:39,957 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:14:40,356 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:14:42,356 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:14:49,646 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:14:49,646 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:15:01,341 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:15:01,343 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:15:01,344 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:15:01,345 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:15:01,367 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:15:02,367 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:15:04,903 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:15:04,903 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:15:12,067 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:15:20,139 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:15:20,140 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:15:22,752 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:15:22,754 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:15:22,756 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:15:22,760 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:15:23,380 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:15:24,380 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:15:35,380 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:15:35,380 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:15:42,446 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:15:42,450 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:15:42,451 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:15:42,464 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:15:43,392 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:15:44,393 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:15:45,405 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:15:50,646 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:15:50,647 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:15:58,851 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:15:58,852 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:15:58,853 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:15:58,855 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:15:59,402 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:16:00,403 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:16:06,347 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:16:06,347 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:16:18,885 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:16:20,145 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:16:20,146 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:16:20,147 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:16:20,149 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:16:20,420 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:16:21,609 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:16:21,615 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:16:22,421 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:16:37,078 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:16:37,078 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:16:41,384 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:16:41,387 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:16:41,387 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:16:41,389 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:16:41,430 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:16:42,430 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:16:52,187 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:16:52,317 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:16:52,317 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:17:02,748 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:17:02,750 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:17:02,751 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:17:02,753 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:17:03,440 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:17:04,441 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:17:07,687 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:17:07,688 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:17:22,910 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:17:22,911 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:17:24,584 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:17:24,586 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:17:24,587 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:17:24,591 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:17:25,451 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:17:25,758 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:17:26,451 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:17:38,166 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:17:38,167 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:17:53,515 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:17:53,516 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:17:56,796 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:17:56,798 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:17:56,799 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:17:56,802 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:17:56,929 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:17:56,931 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:17:56,934 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:17:56,935 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:17:56,937 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:17:56,937 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:17:56,937 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:17:56,946 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:17:57,468 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:17:58,468 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:17:58,986 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:18:08,768 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:18:08,769 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:18:16,536 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:18:16,538 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:18:16,539 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:18:16,541 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:18:17,478 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:18:18,479 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:18:24,000 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:18:24,001 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:18:29,726 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:18:29,727 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:18:29,756 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:18:29,757 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:18:32,668 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:18:38,707 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:18:38,710 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:18:38,711 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:18:38,713 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:18:39,273 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:18:39,274 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:18:39,489 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:18:40,490 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:18:54,507 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:18:54,508 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:19:04,915 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:19:04,917 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:19:04,918 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:19:04,920 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:19:05,508 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:19:06,508 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:19:07,362 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:19:09,763 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:19:09,764 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:19:23,116 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:19:23,118 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:19:23,120 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:19:23,122 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:19:23,522 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:19:24,522 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:19:25,249 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:19:25,249 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:19:40,680 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:19:40,681 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:19:40,919 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:19:41,647 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:19:41,649 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:19:41,649 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:19:41,651 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:19:42,533 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:19:42,533 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:19:55,931 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:19:55,941 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:20:01,762 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:20:01,764 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:20:01,765 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:20:01,767 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:20:02,560 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:20:02,560 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:20:11,172 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:20:11,172 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:20:14,353 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:20:23,195 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:20:23,197 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:20:23,197 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:20:23,199 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:20:23,571 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:20:24,572 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:20:26,440 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:20:26,441 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:20:43,753 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:20:43,754 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:20:46,107 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:20:46,109 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:20:46,110 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:20:46,114 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:20:46,592 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:20:48,309 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:20:48,593 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:20:59,192 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:20:59,192 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:21:07,437 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:21:07,440 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:21:07,441 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:21:07,443 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:21:07,602 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:21:08,602 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:21:14,420 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:21:14,420 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:21:21,953 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:21:28,806 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:21:28,808 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:21:28,808 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:21:28,810 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:21:29,615 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:21:29,699 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:21:29,700 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:21:30,617 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:21:44,971 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:21:44,971 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:21:55,137 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:21:58,252 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:21:58,256 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:21:58,256 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:21:58,259 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:21:58,318 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:21:58,321 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:21:58,322 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:21:58,327 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:21:58,331 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:21:58,331 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:21:58,332 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:21:58,336 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:21:58,630 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:21:58,630 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:22:00,223 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:22:00,223 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:22:00,631 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:22:15,478 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:22:15,479 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:22:17,558 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:22:17,561 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:22:17,562 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:22:17,564 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:22:17,640 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:22:18,641 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:22:28,932 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:22:30,703 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:22:30,704 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:22:38,450 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:22:38,451 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:22:38,474 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:22:38,475 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:22:40,196 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:22:40,199 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:22:40,202 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:22:40,203 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:22:40,666 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:22:40,666 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:22:45,947 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:22:45,947 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:23:01,201 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:23:01,201 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:23:02,084 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:23:02,087 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:23:02,088 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:23:02,092 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:23:02,400 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:23:02,677 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:23:02,677 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:23:16,429 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:23:16,429 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:23:24,067 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:23:24,069 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:23:24,069 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:23:24,071 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:23:24,687 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:23:24,687 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:23:31,667 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:23:31,667 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:23:35,994 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:23:45,546 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:23:45,547 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:23:45,548 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:23:45,551 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:23:45,701 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:23:46,701 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:23:46,902 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:23:46,902 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:24:02,133 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:24:02,134 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:24:07,215 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:24:07,231 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:24:07,233 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:24:07,239 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:24:07,720 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:24:08,720 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:24:10,034 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:24:17,358 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:24:17,358 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:24:28,179 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:24:28,181 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:24:28,185 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:24:28,187 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:24:28,730 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:24:28,731 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:24:32,580 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:24:32,580 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:24:43,297 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:24:47,829 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:24:47,829 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:24:49,393 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:24:49,398 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:24:49,399 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:24:49,401 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:24:49,741 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:24:50,741 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:25:03,291 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:25:03,292 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:25:10,982 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:25:10,983 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:25:10,984 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:25:10,985 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:25:11,757 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:25:12,757 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:25:16,951 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:25:18,614 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:25:18,614 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:25:32,504 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:25:32,506 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:25:32,507 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:25:32,513 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:25:32,775 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:25:32,775 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:25:33,839 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:25:33,839 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:25:49,214 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:25:49,214 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:25:50,491 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:26:04,471 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:26:04,472 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:26:04,944 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:04,947 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:26:04,947 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:26:04,949 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:26:05,123 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:05,125 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:05,127 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:26:05,127 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:26:05,129 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:26:05,130 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:26:05,130 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:26:05,131 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:26:05,802 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:26:06,803 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:26:19,702 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:26:19,703 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:26:23,809 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:26:25,181 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:25,185 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:26:25,185 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:26:25,187 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:26:25,816 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:26:26,817 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:26:35,041 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:26:35,042 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:26:46,955 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:46,956 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:26:46,956 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:26:46,957 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:26:47,831 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:26:48,831 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:26:50,273 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:26:50,273 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:26:51,718 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:51,723 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:51,748 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:51,749 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:26:57,420 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:27:05,741 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:27:05,742 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:27:08,477 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:27:08,480 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:27:08,483 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:27:08,484 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:27:08,861 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:27:08,861 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:27:20,980 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:27:20,981 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:27:29,511 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:27:29,515 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:27:29,516 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:27:29,521 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:27:29,870 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:27:30,871 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:27:31,153 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:27:36,208 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:27:36,209 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:27:50,945 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:27:50,947 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:27:50,948 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:27:50,950 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:27:51,443 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:27:51,444 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:27:51,889 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:27:52,890 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:28:05,170 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:28:06,685 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:28:06,685 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:28:13,145 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:28:13,146 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:28:13,149 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:28:13,151 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:28:13,907 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:28:14,908 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:28:22,191 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:28:22,191 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:28:34,961 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:28:34,963 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:28:34,964 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:28:34,967 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:28:35,919 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:28:36,920 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:28:37,434 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:28:37,434 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:28:38,638 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:28:52,662 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:28:52,663 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:28:57,900 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:28:57,902 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:28:57,903 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:28:57,904 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:28:57,932 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:28:58,932 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:29:07,901 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:29:07,901 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:29:12,384 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:29:20,250 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:29:20,252 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:29:20,252 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:29:20,259 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:29:20,959 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:29:20,959 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:29:23,243 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:29:23,243 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:29:38,820 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:29:38,820 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:29:42,245 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:29:42,247 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:29:42,247 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:29:42,250 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:29:42,976 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:29:42,976 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:29:46,122 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:29:54,054 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:29:54,054 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:30:09,309 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:30:09,310 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:30:15,062 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:30:15,067 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:30:15,069 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:30:15,078 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:30:15,205 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:30:15,207 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:30:15,207 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:30:15,210 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:30:15,212 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:30:15,212 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:30:15,213 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:30:15,215 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:30:15,995 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:30:17,001 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:30:19,588 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:30:24,638 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:30:24,638 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:30:34,628 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:30:34,630 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:30:34,633 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:30:34,635 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:30:35,008 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:30:37,009 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:30:39,911 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:30:39,912 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:30:53,030 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:30:55,063 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:30:55,065 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:30:55,065 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:30:55,067 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:30:55,150 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:30:55,151 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:30:56,018 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:30:57,019 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:31:06,922 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:31:06,923 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:31:06,960 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:31:06,969 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:31:10,375 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:31:10,375 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:31:16,691 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:31:16,693 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:31:16,695 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:31:16,697 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:31:17,031 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:31:20,033 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:31:25,638 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:31:25,638 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:31:26,450 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:31:37,893 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:31:37,894 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:31:37,895 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:31:37,896 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:31:38,041 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:31:40,048 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:31:40,874 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:31:40,874 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:31:56,103 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:31:56,104 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status
+2023-07-06 03:31:59,511 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: partial_history
+2023-07-06 03:31:59,513 DEBUG   SenderThread:501940 [sender.py:send():303] send: history
+2023-07-06 03:31:59,514 DEBUG   SenderThread:501940 [sender.py:send():303] send: summary
+2023-07-06 03:31:59,519 INFO    SenderThread:501940 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-07-06 03:31:59,931 DEBUG   SenderThread:501940 [sender.py:send():303] send: stats
+2023-07-06 03:32:00,064 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/wandb-summary.json
+2023-07-06 03:32:02,071 INFO    Thread-13 :501940 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/MCL/code/wandb/run-20230706_031011-1dxkd4wm/files/output.log
+2023-07-06 03:32:11,355 DEBUG   HandlerThread:501940 [handler.py:handle_request():138] handle_request: stop_status
+2023-07-06 03:32:11,355 DEBUG   SenderThread:501940 [sender.py:send_request():317] send_request: stop_status

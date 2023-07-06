@@ -30,7 +30,7 @@ if not os.path.exists(FILE_PATH):
 
 config = {}
 all_dataset = ['lastfm', 'gowalla', 'yelp2018', 'amazon-book', 'dist_test', 'ml1m', 'amazon-music', 'amazon-baby']
-all_models  = ['mf', 'lgn']
+all_models  = ['mf', 'lgn', 'cml']
 # config['batch_size'] = 4096
 config['bpr_batch_size'] = args.bpr_batch
 config['latent_dim_rec'] = args.recdim
@@ -52,6 +52,20 @@ config['mass_mode'] = args.mass_mode
 config['lr_decay'] = args.lr_decay
 config['Early_Stopping'] = args.ES
 config['infer_mode'] = args.infer_mode
+config['recdim'] = args.recdim
+
+#------ CML hy-para ------
+config['features'] = args.features
+config['margin'] = args.margin
+config['master_learning_rate'] = args.master_learning_rate
+config['clip_norm'] = args.clip_norm
+config['hidden_layer_dim'] = args.hidden_layer_dim
+config['dropout_rate'] = args.dropout_rate
+config['feature_l2_reg'] = args.feature_l2_reg
+config['feature_projection_scaling_factor'] = args.feature_projection_scaling_factor
+config['use_rank_weight'] = args.use_rank_weight
+config['use_cov_loss'] = args.use_cov_loss
+config['cov_loss_weight'] = args.cov_loss_weight
 
 GPU = torch.cuda.is_available()
 device = torch.device(f'cuda:{args.gpu_id}' if GPU else "cpu")

@@ -2,7 +2,9 @@ import world
 import dataloader
 import model
 import utils
+
 from pprint import pprint
+from CML import CML
 
 if world.dataset in ['gowalla', 'yelp2018', 'amazon-book', 'dist_test', 'ml1m', 'amazon-music', 'amazon-baby']:
     dataset = dataloader.Loader(path="../data/"+world.dataset)
@@ -22,5 +24,6 @@ print('===========end===================')
 
 MODELS = {
     'mf': model.PureMF,
-    'lgn': model.LightGCN
+    'lgn': model.LightGCN,
+    'cml': CML
 }

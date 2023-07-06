@@ -1,0 +1,38 @@
+
+Epoch 1/1000
+aver metric loss1.295e+01, aver reg loss8.696e-06
+Total time 24.75170612335205
+Epoch 2/1000
+aver metric loss1.270e+01, aver reg loss2.346e-05
+Total time 21.328866004943848
+Epoch 3/1000
+aver metric loss1.315e+01, aver reg loss3.118e-05
+Total time 18.906636714935303
+Epoch 4/1000
+aver metric loss1.270e+01, aver reg loss3.399e-05
+Total time 20.932095050811768
+Epoch 5/1000
+aver metric loss1.265e+01, aver reg loss3.762e-05
+Total time 21.855847358703613
+Epoch 6/1000
+aver metric loss1.255e+01, aver reg loss4.129e-05
+Total time 21.4284725189209
+Epoch 7/1000
+aver metric loss1.245e+01, aver reg loss4.431e-05
+Total time 20.55347228050232
+Epoch 8/1000
+aver metric loss1.242e+01, aver reg loss4.735e-05
+Total time 21.605166912078857
+Epoch 9/1000
+aver metric loss1.242e+01, aver reg loss4.999e-05
+Total time 20.971446752548218
+Epoch 10/1000
+Traceback (most recent call last):
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/resource_sharer.py", line 149, in _serve
+    send(conn, destination_pid)
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/resource_sharer.py", line 50, in send
+    reduction.send_handle(conn, new_fd, pid)
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/multiprocessing/reduction.py", line 179, in send_handle
+    with socket.fromfd(conn.fileno(), socket.AF_UNIX, socket.SOCK_STREAM) as s:
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/socket.py", line 463, in fromfd
+    nfd = dup(fd)

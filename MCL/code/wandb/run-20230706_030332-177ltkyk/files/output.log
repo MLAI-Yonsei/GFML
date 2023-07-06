@@ -1,0 +1,292 @@
+
+Epoch 1/1000
+aver metric loss6.360e+00, aver reg loss3.446e-06
+Total time 19.65187168121338
+Epoch 2/1000
+aver metric loss6.333e+00, aver reg loss1.032e-05
+Total time 18.379863023757935
+Epoch 3/1000
+aver metric loss6.333e+00, aver reg loss1.400e-05
+Total time 16.784661531448364
+Epoch 4/1000
+aver metric loss6.383e+00, aver reg loss1.715e-05
+Total time 17.487212896347046
+Epoch 5/1000
+aver metric loss6.331e+00, aver reg loss1.911e-05
+Total time 17.52646565437317
+Epoch 6/1000
+aver metric loss6.234e+00, aver reg loss1.817e-05
+Total time 17.554405212402344
+Epoch 7/1000
+aver metric loss6.199e+00, aver reg loss1.992e-05
+Total time 17.27175784111023
+Epoch 8/1000
+aver metric loss6.257e+00, aver reg loss2.138e-05
+Total time 18.742093801498413
+Epoch 9/1000
+aver metric loss6.207e+00, aver reg loss2.254e-05
+Total time 16.650620698928833
+Epoch 10/1000
+{'precision': array([0.03356868, 0.02887265, 0.0239858 ]), 'recall': array([0.0266571 , 0.0447294 , 0.07256475]), 'ndcg': array([0.03823717, 0.04340369, 0.05342323])}
+Best so far: [0.0266571  0.0447294  0.07256475 0.03823717 0.04340369 0.05342323]
+aver metric loss6.207e+00, aver reg loss2.385e-05
+Total time 32.98962712287903
+Epoch 11/1000
+aver metric loss6.148e+00, aver reg loss2.516e-05
+Total time 16.99242329597473
+Epoch 12/1000
+aver metric loss6.145e+00, aver reg loss2.696e-05
+Total time 17.62590003013611
+Epoch 13/1000
+aver metric loss6.147e+00, aver reg loss2.812e-05
+Total time 17.1795015335083
+Epoch 14/1000
+aver metric loss6.136e+00, aver reg loss2.939e-05
+Total time 17.773061990737915
+Epoch 15/1000
+aver metric loss6.137e+00, aver reg loss3.058e-05
+Total time 17.97206711769104
+Epoch 16/1000
+aver metric loss6.106e+00, aver reg loss3.229e-05
+Total time 16.264798402786255
+Epoch 17/1000
+aver metric loss6.095e+00, aver reg loss3.420e-05
+Total time 16.356025218963623
+Epoch 18/1000
+aver metric loss6.089e+00, aver reg loss3.568e-05
+Total time 17.28511691093445
+Epoch 19/1000
+aver metric loss6.092e+00, aver reg loss3.690e-05
+Total time 16.50671887397766
+Epoch 20/1000
+{'precision': array([0.04865473, 0.04089417, 0.03320994]), 'recall': array([0.03845721, 0.06292561, 0.09987044]), 'ndcg': array([0.05580335, 0.06220804, 0.07512922])}
+Best so far: [0.03845721 0.06292561 0.09987044 0.05580335 0.06220804 0.07512922]
+aver metric loss6.078e+00, aver reg loss3.797e-05
+Total time 31.18750023841858
+Epoch 21/1000
+aver metric loss6.048e+00, aver reg loss3.996e-05
+Total time 14.927425622940063
+Epoch 22/1000
+aver metric loss6.051e+00, aver reg loss4.157e-05
+Total time 17.297427654266357
+Epoch 23/1000
+aver metric loss6.060e+00, aver reg loss4.264e-05
+Total time 17.32655429840088
+Epoch 24/1000
+aver metric loss6.046e+00, aver reg loss4.378e-05
+Total time 17.07685160636902
+Epoch 25/1000
+aver metric loss6.076e+00, aver reg loss4.427e-05
+Total time 17.405481100082397
+Epoch 26/1000
+aver metric loss6.053e+00, aver reg loss4.554e-05
+Total time 17.73432230949402
+Epoch 27/1000
+aver metric loss6.031e+00, aver reg loss4.722e-05
+Total time 17.45559597015381
+Epoch 28/1000
+aver metric loss6.014e+00, aver reg loss4.827e-05
+Total time 17.87426209449768
+Epoch 29/1000
+aver metric loss6.029e+00, aver reg loss4.906e-05
+Total time 16.919248819351196
+Epoch 30/1000
+{'precision': array([0.05708888, 0.04744113, 0.03813113]), 'recall': array([0.04523718, 0.07301443, 0.11497518]), 'ndcg': array([0.06606431, 0.07304205, 0.08750725])}
+Best so far: [0.04523718 0.07301443 0.11497518 0.06606431 0.07304205 0.08750725]
+aver metric loss6.026e+00, aver reg loss4.980e-05
+Total time 34.124067544937134
+Epoch 31/1000
+aver metric loss5.994e+00, aver reg loss5.103e-05
+Total time 18.110860347747803
+Epoch 32/1000
+aver metric loss6.001e+00, aver reg loss5.208e-05
+Total time 17.15538263320923
+Epoch 33/1000
+aver metric loss6.016e+00, aver reg loss5.250e-05
+Total time 16.63248109817505
+Epoch 34/1000
+aver metric loss6.017e+00, aver reg loss5.296e-05
+Total time 18.10224723815918
+Epoch 35/1000
+aver metric loss6.008e+00, aver reg loss5.335e-05
+Total time 17.459675788879395
+Epoch 36/1000
+aver metric loss5.992e+00, aver reg loss5.413e-05
+Total time 17.329291105270386
+Epoch 37/1000
+aver metric loss5.990e+00, aver reg loss5.494e-05
+Total time 18.631643772125244
+Epoch 38/1000
+aver metric loss5.981e+00, aver reg loss5.559e-05
+Total time 15.232056379318237
+Epoch 39/1000
+aver metric loss5.993e+00, aver reg loss5.574e-05
+Total time 16.65877938270569
+Epoch 40/1000
+{'precision': array([0.06372553, 0.05253406, 0.04133687]), 'recall': array([0.05070866, 0.08147118, 0.12517442]), 'ndcg': array([0.07388459, 0.08136914, 0.09623216])}
+Best so far: [0.05070866 0.08147118 0.12517442 0.07388459 0.08136914 0.09623216]
+aver metric loss5.980e+00, aver reg loss5.599e-05
+Total time 31.187394618988037
+Epoch 41/1000
+aver metric loss5.986e+00, aver reg loss5.647e-05
+Total time 17.4512996673584
+Epoch 42/1000
+aver metric loss5.970e+00, aver reg loss5.711e-05
+Total time 17.655646800994873
+Epoch 43/1000
+aver metric loss5.980e+00, aver reg loss5.751e-05
+Total time 17.14727258682251
+Epoch 44/1000
+aver metric loss5.988e+00, aver reg loss5.741e-05
+Total time 17.072826623916626
+Epoch 45/1000
+aver metric loss5.981e+00, aver reg loss5.756e-05
+Total time 16.072436571121216
+Epoch 46/1000
+aver metric loss5.987e+00, aver reg loss5.789e-05
+Total time 17.0795636177063
+Epoch 47/1000
+aver metric loss5.981e+00, aver reg loss5.805e-05
+Total time 17.3767147064209
+Epoch 48/1000
+aver metric loss5.967e+00, aver reg loss5.877e-05
+Total time 16.98802638053894
+Epoch 49/1000
+aver metric loss5.975e+00, aver reg loss5.866e-05
+Total time 20.108169078826904
+Epoch 50/1000
+{'precision': array([0.06680151, 0.05474373, 0.0429197 ]), 'recall': array([0.05308162, 0.08492356, 0.12995427]), 'ndcg': array([0.07776485, 0.08520893, 0.10037332])}
+Best so far: [0.05308162 0.08492356 0.12995427 0.07776485 0.08520893 0.10037332]
+aver metric loss5.960e+00, aver reg loss5.899e-05
+Total time 34.513256788253784
+Epoch 51/1000
+aver metric loss5.970e+00, aver reg loss5.927e-05
+Total time 15.216633081436157
+Epoch 52/1000
+aver metric loss5.959e+00, aver reg loss5.957e-05
+Total time 17.677973985671997
+Epoch 53/1000
+aver metric loss5.971e+00, aver reg loss5.957e-05
+Total time 17.177415370941162
+Epoch 54/1000
+aver metric loss5.960e+00, aver reg loss5.980e-05
+Total time 17.09896993637085
+Epoch 55/1000
+aver metric loss5.957e+00, aver reg loss5.993e-05
+Total time 18.25096368789673
+Epoch 56/1000
+aver metric loss5.949e+00, aver reg loss6.060e-05
+Total time 17.563159942626953
+Epoch 57/1000
+aver metric loss5.944e+00, aver reg loss6.043e-05
+Total time 17.107240676879883
+Epoch 58/1000
+aver metric loss5.961e+00, aver reg loss6.057e-05
+Total time 14.950567722320557
+Epoch 59/1000
+aver metric loss5.964e+00, aver reg loss6.052e-05
+Total time 16.20390009880066
+Epoch 60/1000
+{'precision': array([0.06844636, 0.05567683, 0.04363909]), 'recall': array([0.05452421, 0.0866982 , 0.13273613]), 'ndcg': array([0.07993477, 0.08726164, 0.10280382])}
+Best so far: [0.05452421 0.0866982  0.13273613 0.07993477 0.08726164 0.10280382]
+aver metric loss5.953e+00, aver reg loss6.077e-05
+Total time 32.646551847457886
+Epoch 61/1000
+aver metric loss5.973e+00, aver reg loss6.080e-05
+Total time 18.094675540924072
+Epoch 62/1000
+aver metric loss5.970e+00, aver reg loss6.090e-05
+Total time 17.169127225875854
+Epoch 63/1000
+aver metric loss5.937e+00, aver reg loss6.159e-05
+Total time 17.616962432861328
+Epoch 64/1000
+aver metric loss5.967e+00, aver reg loss6.144e-05
+Total time 17.487508058547974
+Epoch 65/1000
+aver metric loss5.923e+00, aver reg loss6.171e-05
+Total time 17.217999935150146
+Epoch 66/1000
+aver metric loss5.936e+00, aver reg loss6.166e-05
+Total time 17.947805643081665
+Epoch 67/1000
+aver metric loss5.944e+00, aver reg loss6.161e-05
+Total time 17.63968539237976
+Epoch 68/1000
+aver metric loss5.922e+00, aver reg loss6.206e-05
+Total time 15.859870433807373
+Epoch 69/1000
+aver metric loss5.937e+00, aver reg loss6.168e-05
+Total time 19.215181350708008
+Epoch 70/1000
+{'precision': array([0.06965615, 0.05644773, 0.04446437]), 'recall': array([0.05567629, 0.088474  , 0.13556365]), 'ndcg': array([0.08123584, 0.08856646, 0.10460321])}
+Best so far: [0.05567629 0.088474   0.13556365 0.08123584 0.08856646 0.10460321]
+aver metric loss5.930e+00, aver reg loss6.197e-05
+Total time 34.01030611991882
+Epoch 71/1000
+aver metric loss5.928e+00, aver reg loss6.231e-05
+Total time 15.98600959777832
+Epoch 72/1000
+aver metric loss5.929e+00, aver reg loss6.203e-05
+Total time 16.551693201065063
+Epoch 73/1000
+aver metric loss5.926e+00, aver reg loss6.241e-05
+Total time 17.838274240493774
+Epoch 74/1000
+aver metric loss5.915e+00, aver reg loss6.268e-05
+Total time 17.217931985855103
+Epoch 75/1000
+aver metric loss5.927e+00, aver reg loss6.268e-05
+Total time 16.569722175598145
+Epoch 76/1000
+aver metric loss5.927e+00, aver reg loss6.263e-05
+Total time 17.242934465408325
+Epoch 77/1000
+aver metric loss5.921e+00, aver reg loss6.285e-05
+Total time 17.232466220855713
+Epoch 78/1000
+aver metric loss5.907e+00, aver reg loss6.316e-05
+Total time 18.403175830841064
+Epoch 79/1000
+aver metric loss5.925e+00, aver reg loss6.290e-05
+Total time 17.635427951812744
+Epoch 80/1000
+{'precision': array([0.0710682 , 0.05772049, 0.04504828]), 'recall': array([0.05672692, 0.09038749, 0.13706188]), 'ndcg': array([0.0829525 , 0.09057504, 0.10636925])}
+Best so far: [0.05672692 0.09038749 0.13706188 0.0829525  0.09057504 0.10636925]
+aver metric loss5.923e+00, aver reg loss6.300e-05
+Total time 32.67156624794006
+Epoch 81/1000
+aver metric loss5.909e+00, aver reg loss6.339e-05
+Total time 17.62653660774231
+Epoch 82/1000
+aver metric loss5.925e+00, aver reg loss6.315e-05
+Total time 17.323973655700684
+Epoch 83/1000
+aver metric loss5.918e+00, aver reg loss6.317e-05
+Total time 19.215938329696655
+Epoch 84/1000
+aver metric loss5.901e+00, aver reg loss6.356e-05
+Total time 16.288723707199097
+Epoch 85/1000
+aver metric loss5.907e+00, aver reg loss6.380e-05
+Total time 16.62115240097046
+Epoch 86/1000
+aver metric loss5.903e+00, aver reg loss6.395e-05
+Total time 17.26543402671814
+Epoch 87/1000
+aver metric loss5.917e+00, aver reg loss6.373e-05
+Total time 17.010671615600586
+Epoch 88/1000
+aver metric loss5.904e+00, aver reg loss6.354e-05
+Total time 17.57813024520874
+Epoch 89/1000
+aver metric loss5.901e+00, aver reg loss6.393e-05
+Total time 17.493643045425415
+Epoch 90/1000
+{'precision': array([0.07204137, 0.05814601, 0.04538984]), 'recall': array([0.05747051, 0.09082115, 0.1383048 ]), 'ndcg': array([0.08436288, 0.09168432, 0.10766686])}
+Best so far: [0.05747051 0.09082115 0.1383048  0.08436288 0.09168432 0.10766686]
+aver metric loss5.901e+00, aver reg loss6.429e-05
+Total time 33.217729330062866
+Epoch 91/1000
+aver metric loss5.905e+00, aver reg loss6.442e-05
+Total time 16.85309863090515

@@ -13,7 +13,6 @@ from dataloader import BasicDataset
 from torch import nn
 import numpy as np
 
-
 class BasicModel(nn.Module):
     def __init__(self):
         super(BasicModel, self).__init__()
@@ -339,7 +338,6 @@ class PureMF(BasicModel):
 
             loss = ((1-self.mix_ratio) * loss_bpr) + (self.mix_ratio * loss_gra)
             return loss
-
 
     def forward(self, users, items):
         users = users.long()

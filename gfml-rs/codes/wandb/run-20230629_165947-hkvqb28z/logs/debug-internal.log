@@ -1,0 +1,57 @@
+2023-06-29 16:59:47,802 INFO    StreamThr :103682 [internal.py:wandb_internal():88] W&B internal server running at pid: 103682, started at: 2023-06-29 16:59:47.799015
+2023-06-29 16:59:47,817 DEBUG   HandlerThread:103682 [handler.py:handle_request():138] handle_request: status
+2023-06-29 16:59:47,827 DEBUG   SenderThread:103682 [sender.py:send_request():317] send_request: status
+2023-06-29 16:59:47,835 DEBUG   SenderThread:103682 [sender.py:send():303] send: header
+2023-06-29 16:59:47,836 DEBUG   SenderThread:103682 [sender.py:send():303] send: run
+2023-06-29 16:59:47,837 INFO    WriterThread:103682 [datastore.py:open_for_write():75] open: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/run-hkvqb28z.wandb
+2023-06-29 16:59:48,543 INFO    SenderThread:103682 [dir_watcher.py:__init__():216] watching files in: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files
+2023-06-29 16:59:48,543 INFO    SenderThread:103682 [sender.py:_start_run_threads():928] run started: hkvqb28z with start time 1688057987.772864
+2023-06-29 16:59:48,545 DEBUG   SenderThread:103682 [sender.py:send():303] send: summary
+2023-06-29 16:59:48,546 INFO    SenderThread:103682 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-06-29 16:59:48,550 DEBUG   HandlerThread:103682 [handler.py:handle_request():138] handle_request: check_version
+2023-06-29 16:59:48,550 DEBUG   SenderThread:103682 [sender.py:send_request():317] send_request: check_version
+2023-06-29 16:59:48,689 DEBUG   HandlerThread:103682 [handler.py:handle_request():138] handle_request: run_start
+2023-06-29 16:59:49,299 DEBUG   HandlerThread:103682 [meta.py:__init__():34] meta init
+2023-06-29 16:59:49,300 DEBUG   HandlerThread:103682 [meta.py:__init__():49] meta init done
+2023-06-29 16:59:49,300 DEBUG   HandlerThread:103682 [meta.py:probe():215] probe
+2023-06-29 16:59:49,325 DEBUG   HandlerThread:103682 [meta.py:_setup_git():205] setup git
+2023-06-29 16:59:49,364 DEBUG   HandlerThread:103682 [meta.py:_setup_git():212] setup git done
+2023-06-29 16:59:49,364 DEBUG   HandlerThread:103682 [meta.py:_save_code():87] save code
+2023-06-29 16:59:49,379 DEBUG   HandlerThread:103682 [meta.py:_save_code():108] save code done
+2023-06-29 16:59:49,379 DEBUG   HandlerThread:103682 [meta.py:_save_patches():125] save patches
+2023-06-29 16:59:49,470 DEBUG   HandlerThread:103682 [meta.py:_save_patches():167] save patches done
+2023-06-29 16:59:49,470 DEBUG   HandlerThread:103682 [meta.py:_save_pip():53] save pip
+2023-06-29 16:59:49,475 DEBUG   HandlerThread:103682 [meta.py:_save_pip():67] save pip done
+2023-06-29 16:59:49,476 DEBUG   HandlerThread:103682 [meta.py:_save_conda():74] save conda
+2023-06-29 16:59:49,562 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/diff.patch
+2023-06-29 16:59:49,564 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/requirements.txt
+2023-06-29 16:59:49,564 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/wandb-summary.json
+2023-06-29 16:59:49,565 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/conda-environment.yaml
+2023-06-29 16:59:49,566 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/code/gfml-rs/codes/main.py
+2023-06-29 16:59:49,566 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/code/gfml-rs
+2023-06-29 16:59:49,567 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/code/gfml-rs/codes
+2023-06-29 16:59:49,567 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/code
+2023-06-29 16:59:53,136 DEBUG   HandlerThread:103682 [meta.py:_save_conda():84] save conda done
+2023-06-29 16:59:53,136 DEBUG   HandlerThread:103682 [meta.py:probe():253] probe done
+2023-06-29 16:59:53,160 DEBUG   SenderThread:103682 [sender.py:send():303] send: files
+2023-06-29 16:59:53,161 INFO    SenderThread:103682 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-06-29 16:59:53,162 INFO    SenderThread:103682 [sender.py:_save_file():1171] saving file code/gfml-rs/codes/main.py with policy now
+2023-06-29 16:59:53,163 INFO    SenderThread:103682 [sender.py:_save_file():1171] saving file diff.patch with policy now
+2023-06-29 16:59:53,200 DEBUG   HandlerThread:103682 [handler.py:handle_request():138] handle_request: stop_status
+2023-06-29 16:59:53,201 DEBUG   SenderThread:103682 [sender.py:send_request():317] send_request: stop_status
+2023-06-29 16:59:53,499 DEBUG   SenderThread:103682 [sender.py:send():303] send: telemetry
+2023-06-29 16:59:53,500 DEBUG   SenderThread:103682 [sender.py:send():303] send: config
+2023-06-29 16:59:53,561 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/conda-environment.yaml
+2023-06-29 16:59:53,562 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/wandb-metadata.json
+2023-06-29 16:59:53,774 DEBUG   SenderThread:103682 [sender.py:send():303] send: telemetry
+2023-06-29 16:59:54,089 INFO    Thread-23 :103682 [upload_job.py:push():143] Uploaded file /tmp/tmp61vlduf9wandb/2ns5lu54-diff.patch
+2023-06-29 16:59:54,197 INFO    Thread-22 :103682 [upload_job.py:push():143] Uploaded file /tmp/tmp61vlduf9wandb/vvcfghmc-code/gfml-rs/codes/main.py
+2023-06-29 16:59:54,206 INFO    Thread-21 :103682 [upload_job.py:push():143] Uploaded file /tmp/tmp61vlduf9wandb/2v672o43-wandb-metadata.json
+2023-06-29 16:59:54,398 DEBUG   SenderThread:103682 [sender.py:send():303] send: telemetry
+2023-06-29 16:59:54,564 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_created():275] file/dir created: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/output.log
+2023-06-29 16:59:56,568 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/output.log
+2023-06-29 16:59:58,571 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/output.log
+2023-06-29 17:00:00,575 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/output.log
+2023-06-29 17:00:08,518 DEBUG   HandlerThread:103682 [handler.py:handle_request():138] handle_request: stop_status
+2023-06-29 17:00:08,519 DEBUG   SenderThread:103682 [sender.py:send_request():317] send_request: stop_status
+2023-06-29 17:00:18,612 INFO    Thread-17 :103682 [dir_watcher.py:_on_file_modified():292] file/dir modified: /data1/deepdog/project/GFML/gfml-rs/codes/wandb/run-20230629_165947-hkvqb28z/files/config.yaml
