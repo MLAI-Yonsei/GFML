@@ -123,6 +123,13 @@ def Test(args, dataset, Recmodel, epoch, device, w=None, multicore=0):
 
         all_users, all_items = Recmodel.computer(True)
 
+        if args.use_mass:
+            mass_u = Recmodel.mass_u.weight.unsqueeze(1)
+            mass_i = Recmodel.mass_i.weight.unsqueeze(0)
+            relu = Recmodel.relu
+            lam = Recmodel.lambd
+            pass
+
         items_emb = all_items.unsqueeze(0)
 
         avg_dist = 0
@@ -134,7 +141,19 @@ def Test(args, dataset, Recmodel, epoch, device, w=None, multicore=0):
             batch_users_gpu = torch.Tensor(batch_users).long()
             batch_users_gpu = batch_users_gpu.to(device)
             users_emb = all_users[batch_users_gpu.long()].unsqueeze(1)
-            rating = -torch.sum((users_emb - items_emb) ** 2, 2)
+
+            if args.use_mass:
+                log_mass = (torch.log(relu(mass_u[batch_users_gpu.long()]) + 1) + torch.log(relu(mass_i) + 1)).squeeze(-1)
+                log_dist = lam * torch.log(torch.sum((users_emb - items_emb)**2, 2) + 1)
+
+                if args.mix:
+                    gfml_rating = log_mass - log_dist
+                    mcl_rating = -torch.sum((users_emb - items_emb) ** 2, 2)
+                    rating = (1-args.mix_ratio) * mcl_rating + args.mix_ratio * gfml_rating
+                else:
+                    rating = log_mass - log_dist
+            else:
+                rating = -torch.sum((users_emb - items_emb) ** 2, 2)
             avg_dist -= rating.mean().item() / float(total_batch)
             
             exclude_index = []

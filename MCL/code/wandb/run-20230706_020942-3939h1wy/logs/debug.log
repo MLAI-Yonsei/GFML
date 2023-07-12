@@ -24,3 +24,4 @@ config: {'split': 0, 'folds': 100, 'testbatch': 100, 'topks': '[5, 10, 20]', 'te
 2023-07-06 02:09:46,286 INFO    MainThread:489604 [wandb_run.py:_redirect():1925] Redirects installed.
 2023-07-06 02:09:46,287 INFO    MainThread:489604 [wandb_init.py:init():765] run started, returning control to user process
 2023-07-06 02:09:46,288 INFO    MainThread:489604 [wandb_watch.py:watch():51] Watching
+2023-07-06 03:34:24,666 WARNING MsgRouterThr:489604 [router.py:message_loop():77] message_loop has been closed

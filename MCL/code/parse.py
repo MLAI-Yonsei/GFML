@@ -68,5 +68,6 @@ def parse_args():
     parser.add_argument('--mix_ratio', type=float, default=0.5)
     parser.add_argument('--ema', action='store_true')
     parser.add_argument('--ema_decay', type=float, default=0.995)
+    parser.add_argument('--use_mass', action='store_true')
 
     return parser.parse_args()

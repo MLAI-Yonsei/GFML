@@ -24,3 +24,10 @@ config: {'split': 0, 'folds': 100, 'testbatch': 100, 'topks': '[5, 10, 20]', 'te
 2023-07-06 03:03:36,295 INFO    MainThread:498228 [wandb_run.py:_redirect():1925] Redirects installed.
 2023-07-06 03:03:36,296 INFO    MainThread:498228 [wandb_init.py:init():765] run started, returning control to user process
 2023-07-06 03:03:36,296 INFO    MainThread:498228 [wandb_watch.py:watch():51] Watching
+2023-07-06 08:07:56,853 INFO    MainThread:498228 [wandb_run.py:_finish():1746] finishing run hoyoon/GFML_Revision_MCL/177ltkyk
+2023-07-06 08:07:56,853 INFO    MainThread:498228 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2023-07-06 08:07:56,854 INFO    MainThread:498228 [wandb_run.py:_restore():1932] restore
+2023-07-06 08:07:56,854 INFO    MainThread:498228 [wandb_run.py:_restore():1938] restore done
+2023-07-06 08:08:02,200 INFO    MainThread:498228 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2023-07-06 08:08:02,208 INFO    MainThread:498228 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2023-07-06 08:08:02,215 INFO    MainThread:498228 [wandb_run.py:_footer_sync_info():3333] logging synced files

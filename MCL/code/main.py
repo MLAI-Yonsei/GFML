@@ -46,7 +46,7 @@ if __name__ == '__main__':
         wandb.init(project='GFML_Revision_MCL',
                    name=f'{weight_file}',
                    config=args)
-
+    wandb.run.log_code(".")
     # wandb.config.update(args)
 
     wandb.watch(model)

@@ -131,12 +131,19 @@ class LightGCN(nn.Module):
         # user & pos_items
         up_mass = torch.log(self.relu(self.mass_u(users)) + 1) + torch.log(self.relu(self.mass_i(pos_items)) + 1)
         up_dist = self.lambd * torch.log(pos_dist + 1)
-        up_loss = up_dist - up_mass.squeeze()
+        if self.args.use_mass:
+            up_loss = up_dist + up_mass.squeeze()
+        else:
+            up_loss = up_dist - up_mass.squeeze()
 
         # user & neg_items
         un_mass = torch.log(self.relu(self.mass_u(users)) + 1) + torch.log(self.relu(self.mass_i(neg_items)) + 1)
         un_dist = self.lambd * torch.log(neg_dist + 1)
-        un_loss = un_mass.squeeze() - un_dist
+
+        if self.args.use_mass:
+            un_loss = - un_mass.squeeze() - un_dist
+        else:
+            un_loss = un_mass.squeeze() - un_dist
 
         if self.args.gfml_opt == 1:
             # Gravity only pos-item<->user

@@ -875,3 +875,36 @@ Total time 17.251978635787964
 Epoch 274/1000
 aver metric loss7.930e+00, aver reg loss9.007e-05
 Total time 16.903611183166504
+Epoch 275/1000
+aver metric loss7.926e+00, aver reg loss8.945e-05
+Total time 16.70531916618347
+Epoch 276/1000
+aver metric loss7.912e+00, aver reg loss8.883e-05
+Total time 16.199899673461914
+Epoch 277/1000
+aver metric loss7.919e+00, aver reg loss9.002e-05
+Total time 16.917007446289062
+Epoch 278/1000
+aver metric loss7.923e+00, aver reg loss9.079e-05
+Total time 16.848373889923096
+Epoch 279/1000
+aver metric loss7.925e+00, aver reg loss8.966e-05
+Total time 17.537726163864136
+Epoch 280/1000
+{'precision': array([0.07281609, 0.05917452, 0.04605389]), 'recall': array([0.05814517, 0.09225003, 0.14024172]), 'ndcg': array([0.08491042, 0.0927421 , 0.10881918])}
+Best so far: [0.05807349 0.09194531 0.14087333 0.08488412 0.09254104 0.10908415]
+aver metric loss7.945e+00, aver reg loss8.988e-05
+Total time 31.11737060546875
+Epoch 281/1000
+Traceback (most recent call last):
+  File "main.py", line 123, in <module>
+    output_information = Procedure.Metric_train_original(args, dataset, model, metric, epoch, sampler, w)
+  File "/data1/deepdog/project/GFML/MCL/code/Procedure.py", line 34, in Metric_train_original
+    metric_loss, reg_loss, pos_loss, neg_loss = metric.stageOne(S, num_items_per_user)
+  File "/data1/deepdog/project/GFML/MCL/code/utils.py", line 44, in stageOne
+    loss.backward()
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/site-packages/torch/_tensor.py", line 255, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/data1/deepdog/anaconda3/envs/mcl/lib/python3.7/site-packages/torch/autograd/__init__.py", line 149, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+KeyboardInterrupt

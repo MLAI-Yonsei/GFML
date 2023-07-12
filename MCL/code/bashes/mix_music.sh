@@ -1,18 +1,18 @@
 #!/bin/bash
 DATA="amazon-digital-music"
-GPU=0
+GPU=1
 
-for LR in 1e-2
+for LR in 1e-2 1e-3
 do
-for LAM in 1e-2
+for LAM in 10e-1 1e-2
 do
-for lamP in 2.0 1.7 1.5 1.3 1.0
+for lamP in 1.2 1.5 1.0
 do
-for lamN in 1.0 0.9 0.8 0.7 0.6
+for lamN in 0.5 0.9 1.0
 do
-for MIX in 0.7
+for MIX in 0.3 0.5
 do
-python main.py --mix --mix_ratio $MIX --dataset $DATA --gpu_id $GPU --lr $LR --lambd $LAM --lamb_p $lamP --lamb_n $lamN --lambp 6.5 --lambn -0.5
+python main.py --mix --mix_ratio $MIX --dataset $DATA --gpu_id $GPU --lr $LR --lambd $LAM --lamb_p $lamP --lamb_n $lamN --lambp 6.5 --lambn -0.5 --use_mass
 done
 done
 done
