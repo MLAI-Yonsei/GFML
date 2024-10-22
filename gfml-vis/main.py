@@ -8,7 +8,6 @@ import pytorch_lightning as pl
 import warmup_scheduler
 import numpy as np
 
-
 from utils import get_model, get_dataset, get_experiment_name, get_criterion
 from da import CutMix, MixUp
 
@@ -107,7 +106,6 @@ class Net(pl.LightningModule):
 
 
 if __name__ == "__main__":
-
     np.random.seed(args.seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed(args.seed)
